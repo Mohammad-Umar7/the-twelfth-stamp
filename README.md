@@ -6,6 +6,9 @@ A first-person psychological horror puzzle game for PC, the browser and Meta Que
 
 🏆 **1st place overall, GameForward GameJam: Mythos Collide** (also ranked #1 for The Collision and Fun)
 
+▶️ **Play in your browser:** https://mohammad-umer7.itch.io/the-twelfth-stamp
+🎬 **Trailer:** https://youtu.be/EW7DYY-Rcy4
+
 ## The game
 
 You are Saeed, home from the Festival of Passports, where every country stamps your passport. There are eleven seals, but there are twelve stamps, and the twelfth says HOME: ENTRY GRANTED. You never earned it. It was forged by the Passenger, a figure of smoked glass that copies the places you remember, and it walked home in your shape.
