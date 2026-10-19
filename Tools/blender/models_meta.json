@@ -1,0 +1,342 @@
+{
+  "_notes": [
+    "Left/right naming follows the wearer or user (for example, LensL is the wearer's left lens). In Blender the wearer's left is +X; in Unity it is -X, which is the wearer's left when facing +Z.",
+    "Preview PNGs are Eevee renders (800x600, neutral grey, three-quarter view). Extra QA views use suffixes such as _front, _side and _back.",
+    "Hierarchy rule: with bake_space_transform=True the Blender FBX exporter writes a spurious 90-degree rotation on grandchildren (checked in the raw FBX), so every file keeps all meshes as direct children of the root. The export helper refuses deeper nesting.",
+    "No third-party or downloaded assets are used. Every model is original geometry built by the scripts in Tools/blender. Nothing was taken from Poly Haven (the scripted models fit the size and slot contract exactly), so there was nothing to add to Art/AssetLedger.md.",
+    "Working .blend files for every asset are saved in Art/Models/_blend/ (about 16 MB, compressed). The QA helpers closeup.py and uvcheck.py use them. They can be regenerated from the scripts, so they can be gitignored if size matters."
+  ],
+  "Glasses_Open": {
+    "script": "build_glasses.py",
+    "front": "+Z (outer lens faces); temples extend toward -Z",
+    "origin": "centre of the arched nose bridge on the frame mid-plane",
+    "notes": [
+      "Brushed gunmetal frame from reference A: softly squared smoke lenses (52 x 42 mm), double bridge (top bar plus arched nose bridge), clear nose pads on wire arms, chamfered end pieces with knuckle hinges and screw heads, and black acetate temple tips. Overall width is 140 mm and the temples are 140 mm long.",
+      "The notch (a V-cut across the top of the end piece) is on the wearer's RIGHT hinge only: Blender -X, Unity +X.",
+      "`TempleL` and `TempleR` pivot on their vertical hinge axes (local Y in Unity). Rotating TempleL by -90 degrees and TempleR by +84 degrees about Unity Y (Blender +90 / -84 about Z) folds them as in Glasses_Folded.",
+      "`LensL` and `LensR` have their origins at the lens centres. UVs are a planar front projection, 0..1 across each lens."
+    ]
+  },
+  "Glasses_Folded": {
+    "script": "build_glasses.py",
+    "front": "+Z (outer lens faces)",
+    "origin": "centre of the arched nose bridge on the frame mid-plane",
+    "notes": [
+      "Same meshes as Glasses_Open. The temples are folded behind the lenses: TempleL lies flat (90 degrees) and TempleR rests on it (84 degrees), with the black tips curving down behind the opposite lenses. The fold is baked into the mesh; the temple pivots are still on the hinge axes."
+    ]
+  },
+  "GlassesCase": {
+    "script": "build_case.py",
+    "front": "+Z (brass clasp side); hinge at the back (-Z side)",
+    "origin": "root at the bottom centre (sits on a surface); CaseBottom and CaseLid origins are both on the hinge axis (back edge at seam height, 31 mm behind and 16 mm above the root)",
+    "notes": [
+      "Hard clamshell, 165 x 62 x 45 mm closed (66 mm deep including the clasp and hinge roll). Exported closed.",
+      "Pillow-domed lid over a shallow 16 mm tray. Navy leather outside (TS_LeatherNavy), ivory lining inside (TS_Lining), a brass seam lip on both halves, and a two-part brass pill clasp at the front (TS_Brass).",
+      "Opening the lid: rotate `CaseLid` about its local X axis by a NEGATIVE angle in Unity; about -105 degrees is fully open (positive angles go into the tray). The hinge roll on the back of `CaseBottom` is coaxial with the lid axis.",
+      "The interior is fully modelled (lining walls and floors), so the open state needs no extra geometry. QA render with the lid open: `GlassesCase_open.png`."
+    ]
+  },
+  "Passport_Open": {
+    "script": "build_passport.py",
+    "front": "+Z (the pages face +Z, toward a viewer standing in front)",
+    "origin": "gutter centre: the point where the two top pages meet, at mid-height",
+    "notes": [
+      "Fictional commemorative booklet. Pages are 105 x 148 mm and the covers 108.5 x 152 mm. It lies open with a 6-degree-per-side V, so the outer edges come toward the viewer.",
+      "`PageLeft` and `PageRight` are the visible top pages, with UVs 0..1 across the whole page (u left to right, v bottom to top as seen from the front; arc-length mapped through the gutter curl). Both origins are on the gutter line, so a page can be turned about local Y in Unity. Verified with a labelled test texture.",
+      "`StackLeft` and `StackRight` are the page blocks: TS_Paper on the faces and TS_PaperEdge on the head, tail, fore-edge and gutter. They sit 0.06 mm behind the top pages (no coplanar faces), and the pages curl softly into the gutter.",
+      "`Covers` is one TS_LeatherNavy piece (both boards plus the spine) with rounded outer corners. `Thread` is seven twisted saddle stitches along the gutter in TS_PaperEdge.",
+      "The top pages are single-sided sheets facing the viewer, so use a two-sided material if a page will be turned over."
+    ]
+  },
+  "Passport_Closed": {
+    "script": "build_passport.py",
+    "front": "+Z (front cover with the emblem); spine on the left edge as seen from the front (Unity +X side)",
+    "origin": "middle of the spine's outer edge. The booklet extends from it to the right as seen from the front (Blender +X, Unity -X)",
+    "notes": [
+      "108.5 x 8.5 x 152 mm (10.6 mm deep including the emblem relief).",
+      "`Cover` is the front board with 0..1 UVs on its front face (u from the spine edge to the fore-edge, v bottom to top). It includes the raised compass-rose-and-lens emblem as geometry in slot TS_Gold, centred at UV (0.50, 0.553). The Cover origin is on the spine hinge line, so it opens by rotating about local Y in Unity.",
+      "`Back` is the back board plus the rounded spine as one closed shell (TS_LeatherNavy). `Pages` is the block (TS_Paper faces, TS_PaperEdge edges)."
+    ]
+  },
+  "Passenger_Parts": {
+    "script": "build_passenger.py",
+    "front": "+Z (face, chest slot and toes point toward Unity +Z)",
+    "origin": "root at ground level between the feet; each part's origin is its joint",
+    "notes": [
+      "Separate rigid parts with no armature, laid out as one assembled 2.15 m figure with the arms and legs straight down. Only the LEFT arm and leg are present (Blender +X, Unity -X). Every part is mirror-symmetric about its own centre plane, so the same mesh works on both sides without negative scale.",
+      "Part origins and directions (Blender, Z up): Part_Hips at the hip centre (extends +Z 0.28, 0.30 wide); Part_Chest at the waist (extends +Z 0.45 to the neck top; the shoulder joints sit at +/-0.21, 0.385 above the waist); Part_Head at the neck top (shell 0.20 wide x 0.26 tall, top at +0.296); Part_UpperArm at the shoulder (extends -Z 0.36); Part_Forearm at the elbow (-Z 0.36); Part_Hand at the wrist (palm -Z 0.09, 0.07 wide); Part_FingerTag at the knuckle (-Z 0.15, 0.014 wide); Part_Thigh at the hip joint (-Z 0.50); Part_Shin at the knee (-Z 0.52); Part_Foot at the ankle (toe 0.17 forward along Blender -Y, which is Unity +Z; sole 0.10 below the ankle).",
+      "Joint positions in the file (Blender metres): ankle (0.095, 0, 0.10), knee (0.095, 0, 0.62), hip joint (0.095, 0, 1.12), hip centre (0, 0, 1.12), waist (0, 0, 1.40), neck top (0, 0, 1.85), shoulder (0.21, 0, 1.785), elbow (0.21, 0, 1.425), wrist (0.21, 0, 1.065). The four knuckles are at x = -0.0285, -0.0095, +0.0095, +0.0285 relative to the wrist, 0.09 below it; the exported Part_FingerTag sits on the second one.",
+      "Measured part sizes (re-import): chest 0.39 wide x 0.19 deep x 0.46 tall including plate relief (the core is 0.17 deep; the shoulder joints are 0.42 apart); hips 0.30 wide; head shell 0.20 wide, top 0.296 above the neck; total figure height 2.147 m.",
+      "Part_FacePlate is an empty, glossy oval visor (0.158 x 0.22 m) that follows the head curvature. It sits 2 mm proud of a 12 mm recess in the head shell. Its origin is its own centre, at offset (0, -0.0834, +0.1552) from the Part_Head origin in Blender, which is (0, +0.1552, +0.0834) in Unity local axes.",
+      "Construction: a smoked-glass core body with layered plates (offset shells, rolled bronze rims) and fine bronze fracture strips that follow the surface. Joints are glass balls with bronze rings. The chest has a 130 x 20 mm horizontal document slot cut 50 mm deep, with a dark TS_FacePlate pocket and a bronze frame. The finger tags are flat luggage-tag plates with a rounded tip, a punched hole with grommets, rivet joints and a knuckle barrel.",
+      "In-game cost per assembled figure (1 hips, 1 chest, 1 head, 1 face plate, 2 each of the six limb parts, 8 finger tags) is about 65k triangles."
+    ]
+  },
+  "Controller_Left": {
+    "script": "build_controllers.py",
+    "front": "+Z (pointing direction)",
+    "origin": "grip centre",
+    "notes": [
+      "Generic ring-less touch controller (no logos or branding): white body, dark face plate, dark tracking nose, tilted handle with a lanyard post. 60 x 139 x 150 mm (W x D x H).",
+      "Root origin is the grip centre (the middle of the handle axis). The pointing direction is Unity +Z and the face plate is up (+Y), so the model can sit under an XR controller transform with identity rotation.",
+      "Button origins are at their own bounding-box centres (press = move along local -Y in Unity). The `thumbstick` origin is its pivot: the stick axis just above the face plate, so tilt it by rotating about local X/Z. `trigger` and `grip` origins are their own centres.",
+      "Left layout: thumbstick on the outer side (Unity -X, the user's left); primaryButton (X) and secondaryButton (Y, further forward) on the inner side (Unity +X); `menu` behind the thumbstick; `grip` pad on the inner side of the handle (Unity +X)."
+    ]
+  },
+  "Controller_Right": {
+    "script": "build_controllers.py",
+    "front": "+Z (pointing direction)",
+    "origin": "grip centre",
+    "notes": [
+      "Generic ring-less touch controller (no logos or branding): white body, dark face plate, dark tracking nose, tilted handle with a lanyard post. 60 x 139 x 150 mm (W x D x H).",
+      "Root origin is the grip centre (the middle of the handle axis). The pointing direction is Unity +Z and the face plate is up (+Y), so the model can sit under an XR controller transform with identity rotation.",
+      "Button origins are at their own bounding-box centres (press = move along local -Y in Unity). The `thumbstick` origin is its pivot: the stick axis just above the face plate, so tilt it by rotating about local X/Z. `trigger` and `grip` origins are their own centres.",
+      "Right layout (mirror of the left): thumbstick on the outer side (Unity +X, the user's right); primaryButton (A) and secondaryButton (B) on the inner side (Unity -X); `system` behind the thumbstick; `grip` on the inner side (Unity -X)."
+    ]
+  },
+  "Sofa": {
+    "script": "build_apartment.py",
+    "front": "+Z (seat side)",
+    "origin": "floor, centre of the footprint",
+    "notes": [
+      "Contemporary three-seat sofa, 2.30 x 0.90 x 0.89 m. Soft-bevelled plinth, arms and back frame; three seat and three back cushions with contrast piping (TS_FabricDark); two throw pillows (TS_FabricDark); splayed tapered legs (TS_WoodDark). Seat height 0.46 m.",
+      "Modelled, not Poly Haven: a scripted model matches the brief's dimensions and slots exactly and needs no licence tracking."
+    ]
+  },
+  "DiningTable": {
+    "script": "build_apartment.py",
+    "front": "+Z (long side)",
+    "origin": "floor, centre of the footprint",
+    "notes": [
+      "1.60 x 0.90 x 0.75 m. 36 mm top with eased edges, aprons, and square tapered legs. All TS_Wood."
+    ]
+  },
+  "DiningChair": {
+    "script": "build_apartment.py",
+    "front": "+Z (seat front)",
+    "origin": "floor, centre of the footprint",
+    "notes": [
+      "0.44 x 0.50 x 0.86 m, seat height 0.46 m. Turned front legs, back legs that sweep up into reclined uprights, a curved backrest board, stretchers (TS_Wood), and an upholstered seat pad (TS_Fabric). It fits under DiningTable."
+    ]
+  },
+  "KitchenRun": {
+    "script": "build_apartment.py",
+    "front": "+Z (cabinet doors); the back of the run is 0.31 m behind the origin, at Unity -Z",
+    "origin": "floor, centre of the footprint",
+    "notes": [
+      "4.0 m base run, 0.62 m deep, worktop at 0.905 m. Left to right as seen from the front: 3-drawer unit, double-door sink unit, door, built-in oven (glass door, control strip with knobs) with a 4-burner gas hob above, door, 4-drawer unit, door.",
+      "Slots: TS_Wood (carcass and fronts), TS_Stone (worktop), TS_Metal (bar handles, sink bowl, hob burners, knobs), TS_MetalDark (plinth, oven, hob glass and grates), TS_Chrome (gooseneck tap), TS_Glass (oven window). The sink is a real cut-out in the worktop with a 200 mm deep bowl.",
+      "The highest point is the tap (1.31 m)."
+    ]
+  },
+  "Fridge": {
+    "script": "build_apartment.py",
+    "front": "+Z (doors)",
+    "origin": "floor, centre of the footprint",
+    "notes": [
+      "0.85 x 0.72 x 1.90 m French-door fridge (0.77 m deep including the handles). Two upper doors and a freezer drawer with eased edges (TS_PlasticWhite), bar handles (TS_Metal), a kick plate and levelling feet (TS_MetalDark), and a small display (TS_Plastic). The doors are part of the single mesh (not separate objects)."
+    ]
+  },
+  "BathroomSink": {
+    "script": "build_apartment.py",
+    "front": "+Z (away from the wall)",
+    "origin": "floor level, centred, ON THE WALL PLANE: everything extends forward (Unity +Z) from the origin, so place the origin on the wall surface",
+    "notes": [
+      "Wall-hung vanity (0.80 x 0.46 m, 0.40 to 0.87 m high) with two drawers and bar pulls (TS_Wood, TS_Metal), a marble top (TS_Marble), an oval vessel basin with a chrome drain (TS_Ceramic, TS_Chrome), a tall vessel mixer (TS_Chrome), and a 0.70 x 0.90 m rounded mirror frame (TS_MetalDark) centred 1.62 m up.",
+      "`MirrorGlass` is a separate object (TS_Glass) with planar 0..1 UVs across the mirror, so the game can give it a reflection or probe material."
+    ]
+  },
+  "Door": {
+    "script": "build_apartment.py",
+    "front": "+Z (the side with the hinge knuckles)",
+    "origin": "hinge bottom: on the hinge axis at floor level",
+    "notes": [
+      "0.90 x 2.10 m contemporary flush interior door, 40 mm leaf (TS_Wood) with dark inlay lines (TS_MetalDark), lever handles with roses and a thumb-turn on both sides (TS_Metal), and three hinges (TS_Metal).",
+      "The leaf extends from the hinge toward Unity -X (the viewer's right when standing in front, facing it). Rotate about local Y: positive angles swing the door toward the front (+Z), negative toward the back. The leaf has a 6 mm floor gap."
+    ]
+  },
+  "Suitcase": {
+    "script": "build_apartment.py",
+    "front": "+Z (the open long side faces the viewer; the lid hinge is at the back)",
+    "origin": "floor, centre of the base footprint; `Lid` origin on its hinge axis",
+    "notes": [
+      "Open hard-shell suitcase, 75 x 50 x 25 cm closed. The base lies on its back with the packed clothes visible, and the lid stands open at 105 degrees behind it.",
+      "Shells have rounded edges and ribs (TS_Plastic), metal rim trim (TS_Metal), and fabric lining (TS_Fabric) with a mesh pocket and compression straps (TS_FabricDark). There are spinner wheels (TS_MetalDark, TS_Rubber) at one end and a carry handle at the other. The clothes use TS_Fabric and TS_FabricDark.",
+      "Closing the lid: rotate `Lid` about its local X axis by +105 degrees in Unity (it is exported open)."
+    ]
+  },
+  "Phone": {
+    "script": "build_apartment.py",
+    "front": "+Z (screen)",
+    "origin": "centre of the phone; the phone stands upright (long axis vertical)",
+    "notes": [
+      "71.5 x 147 x 7.8 mm (12 mm deep with the camera bump). Metal frame with side buttons (TS_MetalDark), black front bezel (TS_Plastic), back glass (TS_Glass), and a triple-camera plateau (TS_MetalDark, TS_Chrome, TS_Glass).",
+      "`Screen` is a separate object (slot TS_Glass) with 0..1 UVs across the display: u left to right, v bottom to top as seen from the front. Verified with a labelled test texture. Assign an emissive or UI material to it."
+    ]
+  },
+  "VintageCamera": {
+    "script": "build_props.py",
+    "front": "+Z (lens)",
+    "origin": "bottom centre (sits on a surface)",
+    "notes": [
+      "Generic rangefinder camera with no logos or text, 138 x 33 x 80 mm body; the 45 mm lens extends 36 mm. Chrome top and bottom plates (TS_Chrome) with a leatherette band (TS_Leather).",
+      "Details: viewfinder and rangefinder windows (TS_Glass) with a frosted illumination window (TS_PlasticWhite) in chrome frames; a knurled shutter-speed dial, shutter release, film advance lever, knurled rewind knob, accessory shoe, and strap lugs with split rings.",
+      "Lens: mount flange, knurled aperture and focus rings with a focus tab, barrel, front ring, dark inner ring (TS_MetalDark), and a slightly domed front element (TS_Glass)."
+    ]
+  },
+  "Noisemaker": {
+    "script": "build_props.py",
+    "front": "+Z (speaker grille and dial)",
+    "origin": "bottom centre (the rubber feet rest on the floor)",
+    "notes": [
+      "Old portable radio, 250 x 90 x 160 mm case (0.40 m high with the antenna). Leatherette case with rounded edges (TS_Leather), chrome face plate with 11 chrome louvres over dark speaker cloth (TS_FabricDark), a chrome dial bezel with a glass cover (TS_Glass), a needle (TS_MetalDark), and a knurled tuning knob. Also: a volume knob (TS_Plastic), a leather strap handle on chrome brackets, a three-stage telescopic chrome antenna leaning back-left, and rubber feet (TS_Rubber).",
+      "`Dial` is a separate child (TS_EmissiveWarm) so the game can light it or switch it off. It has planar 0..1 UVs across the dial face."
+    ]
+  },
+  "HandLantern": {
+    "script": "build_props.py",
+    "front": "+Z (rotationally symmetric)",
+    "origin": "ROOT ORIGIN = THE HANDLE GRIP CENTRE (the hand attachment point). The lantern hangs below it: the bottom is 0.51 m down",
+    "notes": [
+      "Japanese chochin-style paper lantern, 0.245 m diameter and 0.31 m paper height. The ribbed paper shell (TS_Paper) is a real thin shell, open at the top as on a real chochin, with raised rib lines. Dark wooden top and bottom caps, a bent-wood bail with pivot studs, and a turned grip (TS_WoodDark). Inside: a candle (TS_PlasticWhite) with a wick (TS_FabricDark) on a wooden holder.",
+      "`Glow` is a separate soft ellipsoid inside the lantern (TS_EmissiveWarm). Its origin is its own centre, 0.347 m below the grip; scale or flicker it from there. Place a point light at the Glow position."
+    ]
+  },
+  "GardenLamp": {
+    "script": "build_props.py",
+    "front": "+Z (the wick knob is on the Unity -X side)",
+    "origin": "bottom centre",
+    "notes": [
+      "Small brass oil lamp, 0.33 m tall including the carry ring and 0.10 m wide: turned foot, stem, font with bead rings, burner gallery with prongs, knurled wick knob (TS_Brass), a glass chimney modelled as a thin shell (TS_Glass), a fabric wick (TS_Fabric), side frame rods, a smoke cap, and a carry ring.",
+      "`Flame` is a separate teardrop (TS_EmissiveWarm) with its origin at the flame BASE (the wick tip, 0.127 m up), so scaling it flickers the flame upward."
+    ]
+  },
+  "Reflector": {
+    "script": "build_props.py",
+    "front": "+Z (mirror face)",
+    "origin": "root at ground centre; `Pivot` origin on the vertical rotation axis at the bearing (0.62 m up)",
+    "notes": [
+      "Bronze mirror, 0.90 m diameter, on a yoke. 1.12 m wide across the tension knobs and 1.71 m tall; the mirror centre is 1.25 m up. Mirror face slot is TS_Chrome (polished reflective face; give it a reflective or probe material). The rim, domed back with decorative rings and boss, turntable, trunnions and knurled knobs are TS_Brass; the yoke and stand are TS_MetalDark; the levelling pads are TS_Rubber.",
+      "`Base` (static) is the heavy round foot, post and bearing collar. `Pivot` holds the turntable, yoke and mirror; rotate it about its local Y axis in Unity to aim the mirror. The mirror is vertical, facing +Z at zero rotation."
+    ]
+  },
+  "OpticalPanel": {
+    "script": "build_props.py",
+    "front": "+Z (disc face)",
+    "origin": "root at ground centre; `Pivot` origin on the vertical rotation axis at the bearing (0.83 m up)",
+    "notes": [
+      "0.65 m biconvex glass disc (TS_Glass) in a 0.72 m metal ring with 16 screws (TS_Metal, TS_MetalDark), on a neck bracket and post with a round foot (TS_MetalDark, TS_Rubber pad). The disc centre is 1.255 m up.",
+      "`Base` is static; `Pivot` (turntable, neck, ring and disc) rotates about its local Y axis. The disc part of Pivot has planar 0..1 UVs across its face (front view), so the game can project a pattern onto it."
+    ]
+  },
+  "VerificationDesk": {
+    "script": "build_props.py",
+    "front": "+Z (visitor side: panelled front and the festival cloth). The official's side, with the drawer pedestal, faces -Z",
+    "origin": "floor, centre of the footprint; each desk-top prop's origin is at its own base centre on the desk top (0.76 m)",
+    "notes": [
+      "1.60 x 0.75 x 0.76 m festival desk: wooden top (TS_Wood), dark panelled body with raised insets and brass trim strips (TS_WoodDark, TS_Wood, TS_Brass), a three-drawer pedestal with brass knobs on the official's side, and a festival cloth runner (TS_Fabric) draped over the front edge with a V hem, gold trim and tassels (TS_Gold).",
+      "Separate children so the game can pick up or animate them: `Ledger` is an open ledger book (blank TS_Paper pages, TS_PaperEdge edges, TS_Leather cover, TS_Fabric ribbon), readable from the visitor side. `InkPad` is a metal tin with an inked felt pad (TS_Metal, TS_FabricDark) and its lid open. `HandStamp` is a brass hand stamp with a turned dark-wood handle and a rubber die (TS_Brass, TS_WoodDark, TS_Rubber). `Lamp` is a small brass desk lamp with a warm bulb (TS_Brass, TS_Metal inside the shade, TS_EmissiveWarm bulb)."
+    ]
+  },
+  "VoidStamp": {
+    "script": "build_props.py",
+    "front": "+Z (the long side of the die faces the viewer)",
+    "origin": "bottom centre: the centre of the rubber die face (the contact point when stamping)",
+    "notes": [
+      "Heavy rubber stamp, 94 x 64 mm block, 153 mm tall. Dark wooden mount block with a metal index plate on top (TS_WoodDark, TS_Metal), a metal ferrule, a turned wooden knob handle (TS_Wood), and a foam backing layer (TS_FabricDark).",
+      "`Face` is the rubber die (TS_Rubber, 86 x 56 x 5 mm), a separate child with planar 0..1 UVs across its contact face (u along Blender +X, which is Unity -X; v toward the front, Unity +Z), so a stamp design texture can be shown on the die."
+    ]
+  },
+  "FestivalToken": {
+    "script": "build_props.py",
+    "front": "+Z (obverse with the compass rose); the coin stands on its edge",
+    "origin": "centre of the coin",
+    "notes": [
+      "Brass coin, 32 mm diameter and 2.6 mm thick (TS_Brass). Raised rim, 60-reed milled edge, and recessed fields with relief kept below the rim. Obverse: eight-point compass rose with a lens boss and a ring (matching the passport emblem). Reverse: a central seal ring and twelve small seals around it (the twelve stamps). No text.",
+      "To lay it flat with the obverse up, rotate it -90 degrees about X in Unity."
+    ]
+  },
+  "Landmark_Eiffel": {
+    "script": "build_landmarks.py",
+    "front": "+Z (the tower is four-way symmetric)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Stylised ~100 m lattice tower (99.2 m to the mast tip, 39.2 m base). The four splayed legs are box-section lattices with real X cross-bracing on every face. They curve into an upper shaft (exponential profile) that is also cross-braced with mid-face posts. Includes the great double arches with radial bracing on all four sides, a first-platform ring deck with a frieze and railing, a second platform, and a top deck with a cabin, lantern dome and mast.",
+      "Slots: TS_MetalDark (ironwork), TS_Metal (deck floors and cabin), TS_EmissiveWarm (a small beacon on the lantern)."
+    ]
+  },
+  "Landmark_Liberty": {
+    "script": "build_landmarks.py",
+    "front": "+Z (statue faces +Z)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Stylised statue and pedestal, 93.6 m to the torch flame. An 11-point star-fort base, then the pedestal: plinth, tapered shaft with pilasters, string courses and dark loggia panels (TS_MetalDark), cornice and attic. The robed figure has fold detail and a forward knee, a head with a seven-ray crown, a raised right arm with a torch, and a tablet held in the left arm.",
+      "Slots: TS_Stone (base and pedestal), TS_Metal (the statue; assign a verdigris material), TS_MetalDark (panels), TS_EmissiveWarm (torch flame)."
+    ]
+  },
+  "Landmark_Pagoda": {
+    "script": "build_landmarks.py",
+    "front": "+Z (entry steps)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Five-tier pagoda, 39.2 m tall, on a 15 m stone platform with entry steps. Each tier has white plaster walls (TS_PlasticWhite) with timber posts, beams and doors (TS_Wood). Upper tiers add balconies with railings and dark bracket bands (TS_WoodDark). Each roof is a concave hipped roof (TS_MetalDark, tile colour) with upturned corners and hip ridges. The bronze sorin finial (TS_Brass) has nine rings, a water-flame ornament and a jewel."
+    ]
+  },
+  "Landmark_ArchTower": {
+    "script": "build_landmarks.py",
+    "front": "+Z (the opening runs through the front and back faces)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Abstract ~150 m tower: two tapering legs rise around a parabolic opening (18 m half-width at the base, closing at 125 m) and merge into a rounded crown with a spire and beacon. Each 4 m floor is a TS_Metal band over an opaque curtain wall in TS_MetalDark (dark glass), with continuous vertical TS_Metal fins on the front and back faces. A glazed sky bridge (TS_Glass) spans the opening at 100 to 106 m.",
+      "The curtain wall deliberately uses opaque TS_MetalDark, not TS_Glass, so the distant silhouette reads as solid. Only the sky bridge uses TS_Glass."
+    ]
+  },
+  "Landmark_DomedPavilion": {
+    "script": "build_landmarks.py",
+    "front": "+Z (all four faces are identical)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Domed mausoleum-style pavilion, 65 m to the finial, on a 93 m square platform (TS_Stone). The chamfered marble block (TS_Marble) has a pishtaq frame on each side with a deep pointed-arch iwan (boolean-cut), plus two-storey arched niches on the chamfers. Above: a parapet, a drum, and a 22.5 m onion dome with a gold finial (TS_Gold). Four roof chhatris, and four minarets with three balconies each, topped by chhatris."
+    ]
+  },
+  "Landmark_ClockTower": {
+    "script": "build_landmarks.py",
+    "front": "+Z (four identical clock faces)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Gothic-revival clock tower, 100.1 m to the finial, 12 m square shaft. Stone shaft (TS_Stone) with corner buttresses, pilasters, string courses and dark lancet window panels (TS_MetalDark). A wider clock stage with gilded rings and corner bosses (TS_Gold) and a gable over each face, then a belfry arcade, pyramidal lower spire with corner pinnacles, lantern stage and upper spire (TS_MetalDark), and a gold finial.",
+      "`Faces` is a child holding the four clock discs (7 m diameter, centre 64.5 m up) in slot TS_EmissiveWarm. Each disc has 0..1 UVs (u to the viewer's right, v up as seen from outside), so the game can put a clock-face texture or emissive hands on them."
+    ]
+  },
+  "Landmark_ColumnGate": {
+    "script": "build_landmarks.py",
+    "front": "+Z (the quadriga faces +Z)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "Neoclassical six-column gate, 41 x 15 m, 26.8 m to the top of the quadriga. Two rows of six fluted Doric-style columns on a stepped base, with passage walls between the front and back columns forming five passages. Above: an entablature with a triglyph frieze, cornices, a stepped attic with side wedges, and a quadriga block. The quadriga (TS_Metal) has four horses (the middle two rearing), a chariot with wheels, and a winged figure holding a standard with a wreath. Stone is TS_Stone."
+    ]
+  },
+  "StreetLamp_Paris": {
+    "script": "build_landmarks.py",
+    "front": "+Z (rotationally symmetric; the ladder bar runs along X)",
+    "origin": "origin at ground centre",
+    "notes": [
+      "4.0 m cast-iron Parisian lamp post (TS_MetalDark): fluted flared base, collars, a tapering fluted shaft, a ladder-rest crossbar with ball ends, scroll brackets, a lantern cup, a hexagonal tapered lantern frame, and a crown roof with a finial.",
+      "`Lantern` is a child (TS_EmissiveWarm): the hexagonal glass body inside the frame, origin at its centre (3.495 m up). Put a point light there."
+    ]
+  },
+  "Saeed": {
+    "script": "build_saeed.py",
+    "front": "+Z (face and toes); skinned, the feet on the origin",
+    "origin": "between the soles at floor level (the Root bone)",
+    "source": "Modelled (Blender script) on the MPFB 2 / MakeHuman base body (CC0)",
+    "notes": [
+      "The player, Saeed, for the bathroom mirror (Player/MirrorAvatar.cs) and the ending: a slim Emirati man of about 25, 1.78 m to the top of the skull and 1.83 m to the top of the hair, built from the user's turnaround (front, side, back and face).",
+      "Body: the MPFB 2 (MakeHuman) base mesh with its macro and face targets (male, 25, slim; an oval face, defined cheekbones, a slight aquiline nose, a half-smile), CC0. Rig: MPFB's game_engine rig and its weights, 53 bones renamed for Unity: Root, Hips, Spine, Chest, UpperChest, Neck, Head, Shoulder/UpperArm/Forearm/Hand_L/R, Thumb/Index/Middle/Ring/Little1-3_L/R, UpperLeg/LowerLeg/Foot/Toes_L/R. _L is the wearer's left (Unity -X). Bind pose: MakeHuman's relaxed A-pose, elbows a little bent.",
+      "Skinned, unlike the other files: one mesh, `SaeedMesh`, on `Armature` (exported with object_types ARMATURE+MESH, bake_space_transform=False, add_leaf_bones=False, at most 4 weights a vertex). In Unity the prefab root is identity and the Armature node carries the axis conversion (270 degrees about X); the skinned result faces +Z with up +Y.",
+      "Modelled on the body: the kandura (#EDEBE4; a shell from MPFB's tights helper above the chest, a lofted straight robe below it with soft folds and a hem flare, a round collarless neckline, the buttoned placket, the furakha cord and tassel, plain cuffs, inner facings at the openings), curly hair (short sides, volume on top), a short full beard and moustache, brows, eyes, a crossbody satchel (right shoulder to the left hip, padded over the shoulder, two slider buckles on the chest run, a small pouch resting slightly behind the left hip) and suede desert boots on crepe soles. The body the kandura and the boots hide is removed.",
+      "Textures in Resources/Art/Saeed, baked in Cycles from procedural shaders (albedo and tangent-space normal): saeed_skin (2048; the first-person hands' colour, `HandMesh.SkinColor`, so the mirror and the hands agree), saeed_kandura (2048), saeed_hair (1024; the beard and brows too), saeed_leather (1024; buckles in gunmetal), saeed_suede (512), saeed_eyes (512, generated). `Models.SaeedSlots()` builds the materials; the names do not end in _a, so Models.Spawn never tiles them.",
+      "Rebuild: `blender -b --python-exit-code 1 -P Tools/blender/build_saeed.py`. It needs the MPFB 2 extension installed (it enables it for the run only and never saves Blender's preferences) and does not use --factory-startup. Stage .blend checkpoints go to %LOCALAPPDATA%\\TheTwelfthStamp\\Blender\\saeed_work, outside the repo."
+    ]
+  }
+}
