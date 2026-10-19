@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{{ PRODUCT_NAME }}}</title>
+    <meta name="description" content="{{{ DESCRIPTION }}}">
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script>
+      // Unity ignores the promises of these calls; a refusal (a click right after Esc) would reach the loader's error
+      // handler and freeze the tab behind a blocking alert.
+      ['requestPointerLock', 'requestFullscreen'].forEach(function (n) {
+        var f = Element.prototype[n];
+        if (!f) return;
+        Element.prototype[n] = function () {
+          var r = f.apply(this, arguments);
+          if (r && r.catch) r.catch(function (e) { console.warn(n + ' refused: ' + e); });
+          return r;
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <!-- The Twelfth Stamp: full-page canvas from De-Panther's WebXR Export template (WebXRFullView2020, Apache-2.0). The
+         Enter VR button appears only when the browser can start an immersive VR session (a headset's browser). -->
+    <div id="unity-container">
+      <div id="unity-canvas-container" style="width: 100%; height: 100%;">
+        <canvas id="unity-canvas" style="width: 100%; height: 100%;" tabindex="-1"></canvas>
+      </div>
+      <div id="unity-loading-bar">
+        <div id="unity-loading-title">{{{ PRODUCT_NAME }}}</div>
+        <div id="unity-progress-bar-empty">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+        <div id="unity-loading-hint">Loading. Headphones recommended.</div>
+      </div>
+      <button id="entervr" value="Enter VR" disabled title="Play in your headset">Enter VR</button>
+    </div>
+    <script>
+      var buildUrl = "Build";
+      var loaderUrl = buildUrl + "/{{{ LOADER_FILENAME }}}";
+      var config = {
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#if MEMORY_FILENAME
+        memoryUrl: buildUrl + "/{{{ MEMORY_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "{{{ COMPANY_NAME }}}",
+        productName: "{{{ PRODUCT_NAME }}}",
+        productVersion: "{{{ PRODUCT_VERSION }}}",
+        // Saves and settings are files in persistentDataPath: write them through to the browser's IndexedDB.
+        autoSyncPersistentDataPath: true,
+      };
+
+      var canvas = document.querySelector("#unity-canvas");
+      var loadingBar = document.querySelector("#unity-loading-bar");
+      var progressBarFull = document.querySelector("#unity-progress-bar-full");
+      var enterVRButton = document.getElementById('entervr');
+      var unityInstance = null;
+      {{{ WEBXR_POLYFILL_CONFIG }}}
+
+      loadingBar.style.display = "block";
+
+      var script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          progressBarFull.style.width = 100 * progress + "%";
+        }).then((instance) => {
+          unityInstance = instance;
+          loadingBar.style.display = "none";
+          canvas.focus();
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+
+      // WebXR Export reports whether immersive VR is possible here; the button stays hidden on laptops and phones.
+      document.addEventListener('onVRSupportedCheck', function (event) {
+        enterVRButton.disabled = !event.detail.supported;
+        enterVRButton.style.display = event.detail.supported ? "block" : "none";
+      }, false);
+      enterVRButton.addEventListener('click', function (event) {
+        if (unityInstance) unityInstance.Module.WebXR.toggleVR();
+      }, false);
+    </script>
+  </body>
+</html>
