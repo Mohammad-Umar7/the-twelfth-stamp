@@ -1,0 +1,251 @@
+{
+  "texture": "passport_insert_page.png",
+  "size_px": [
+    1024,
+    1400
+  ],
+  "uv_convention": "Unity UV: origin bottom-left, u right, v up (v = 1 - y_px / height). *_px values use image pixels with origin top-left.",
+  "seal_order": [
+    "UAE",
+    "Egypt",
+    "France",
+    "USA",
+    "Japan",
+    "SaudiArabia",
+    "India",
+    "Brazil",
+    "UnitedKingdom",
+    "Morocco",
+    "Germany"
+  ],
+  "seals": [
+    {
+      "id": "UAE",
+      "center": [
+        0.1543,
+        0.78571
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        158,
+        300
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "Egypt",
+      "center": [
+        0.38477,
+        0.78571
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        394,
+        300
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "France",
+      "center": [
+        0.61523,
+        0.78571
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        630,
+        300
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "USA",
+      "center": [
+        0.8457,
+        0.78571
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        866,
+        300
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "Japan",
+      "center": [
+        0.1543,
+        0.59643
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        158,
+        565
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "SaudiArabia",
+      "center": [
+        0.38477,
+        0.59643
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        394,
+        565
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "India",
+      "center": [
+        0.61523,
+        0.59643
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        630,
+        565
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "Brazil",
+      "center": [
+        0.8457,
+        0.59643
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        866,
+        565
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "UnitedKingdom",
+      "center": [
+        0.26953,
+        0.40714
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        276,
+        830
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "Morocco",
+      "center": [
+        0.5,
+        0.40714
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        512,
+        830
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    },
+    {
+      "id": "Germany",
+      "center": [
+        0.73047,
+        0.40714
+      ],
+      "radius": [
+        0.08984,
+        0.08
+      ],
+      "center_px": [
+        748,
+        830
+      ],
+      "radius_px": [
+        92,
+        112
+      ]
+    }
+  ],
+  "return_field": {
+    "id": "Return",
+    "center": [
+      0.5,
+      0.18214
+    ],
+    "rect": {
+      "xMin": 0.16797,
+      "yMin": 0.09429,
+      "width": 0.66406,
+      "height": 0.17571
+    },
+    "rect_px": {
+      "x0": 172,
+      "y0": 1022,
+      "x1": 852,
+      "y1": 1268
+    }
+  }
+}
