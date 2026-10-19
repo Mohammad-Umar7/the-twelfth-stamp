@@ -1,0 +1,223 @@
+{
+  "source": {
+    "approved_by": "Awaiz Ahmed",
+    "original_path": "The Twelfth Stamp_ Portals of Shadow.png (repo root, left untouched)",
+    "build_copy": "Art/Branding/source/KeyArt_PortalsOfShadow.png",
+    "sha256": "2994000c527d927b96df31f2a451db633f7a93aa0a1a27a601af06b8cb0da439",
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGB",
+    "alpha_in_source": "none (RGB); corners are black pixels",
+    "made_with": "ChatGPT image generation (per Awaiz Ahmed, 17 Oct 2026)"
+  },
+  "corner_mask": {
+    "method": "circle fit per corner on the edge band; only pixels outside the arcs become transparent",
+    "radii_px": {
+      "TL": 300,
+      "TR": 302,
+      "BR": 364,
+      "BL": 362
+    },
+    "fit": {
+      "TL": {
+        "radius": 300,
+        "content_cut": 327,
+        "dark_left_inside": 884
+      },
+      "TR": {
+        "radius": 302,
+        "content_cut": 183,
+        "dark_left_inside": 957
+      },
+      "BL": {
+        "radius": 362,
+        "content_cut": 264,
+        "dark_left_inside": 310
+      },
+      "BR": {
+        "radius": 364,
+        "content_cut": 500,
+        "dark_left_inside": 621
+      }
+    },
+    "bright_pixels_made_transparent": 677
+  },
+  "logo": {
+    "approved_by": "Awaiz Ahmed",
+    "original_path": "The Twelfth Stamp_ Bloodied Metallic Logo.png (repo root, left untouched)",
+    "build_copy": "Art/Branding/source/Logo_BloodiedMetallic.png",
+    "sha256": "53d2538e91264cb4a71d695294d1f3f45d74c971b72cbbbf7a1944502f736b7f",
+    "size": [
+      2172,
+      724
+    ],
+    "mode": "RGBA",
+    "alpha_in_source": "yes; kept exactly as supplied",
+    "used_for": "title on the intro and welcome screens and on end cards"
+  },
+  "crops": {
+    "thumbnail": [
+      160,
+      55,
+      1050,
+      945
+    ],
+    "menu_art": [
+      0,
+      0,
+      1254,
+      915
+    ]
+  },
+  "icon_rule": "sizes <= 96 px use the thumbnail crop (title unreadable); larger sizes use the full cover",
+  "outputs": {
+    "Game/Assets/Resources/Art/Branding/keyart_cover.png": {
+      "sha256": "b25529e6937910e7af6cf1d6d04a8e9e282a333dbdc8eca532fd47fad14e3c57",
+      "size": [
+        1254,
+        1254
+      ],
+      "bytes": 2737315
+    },
+    "Game/Assets/Resources/Art/Branding/keyart_logo.png": {
+      "sha256": "44cbcbd9f2bf771ead500a6c30db520393b779fc2feb7041a8a0221fb957a383",
+      "size": [
+        2048,
+        683
+      ],
+      "bytes": 1335419
+    },
+    "Game/Assets/Resources/Art/Branding/keyart_menu.png": {
+      "sha256": "f39a1d6006a4e7f31dcba2e66aabf8ae82aa6da136cd4e51c7a73b9c69ffa8dc",
+      "size": [
+        1254,
+        915
+      ],
+      "bytes": 2213273
+    },
+    "Game/Assets/Resources/Art/Branding/keyart_thumb.png": {
+      "sha256": "ed50431a764529fe0eb09e92a97f077603e79960039b63628a4397cfcc89141e",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 159314
+    },
+    "Tools/install/TheTwelfthStamp.ico": {
+      "sha256": "be68ddf16dcb0c9b16754e11088c8541de863d5526323e28e7727500cfdde1e8",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 300145,
+      "ico_sizes": [
+        [
+          16,
+          16
+        ],
+        [
+          20,
+          20
+        ],
+        [
+          24,
+          24
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          40,
+          40
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          96,
+          96
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          256,
+          256
+        ]
+      ]
+    },
+    "Game/Assets/Branding/Icons/icon_1024.png": {
+      "sha256": "8aed7e2ccb2995fea1007903be3efae9584652a1f51e6a4d4c917f30e57a5e67",
+      "size": [
+        1024,
+        1024
+      ],
+      "bytes": 1908822
+    },
+    "Game/Assets/Branding/Icons/icon_512.png": {
+      "sha256": "c15811daeb27f81fd9bbbe13f862f8f5d14d5efa99ec4fe062d67fb7d565d558",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 537471
+    },
+    "Game/Assets/Branding/Icons/icon_256.png": {
+      "sha256": "474efc47bd1961217e7f7cf6bd4b5ac6f77918661c02ee584f9bd1d97c43056b",
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 151411
+    },
+    "Game/Assets/Branding/Icons/icon_128.png": {
+      "sha256": "c9998d2ee9fc2a8fd78b0c197e7906eb8c33b216e0b562cb7b5ebb8ab20dabfe",
+      "size": [
+        128,
+        128
+      ],
+      "bytes": 42494
+    },
+    "Game/Assets/Branding/Icons/icon_64.png": {
+      "sha256": "e344c6ddc4e5cc64b637c0067d79ccdd237fdfdb71b0ebbe110e67c7283c204a",
+      "size": [
+        64,
+        64
+      ],
+      "bytes": 11774
+    },
+    "Game/Assets/Branding/Icons/icon_48.png": {
+      "sha256": "1fca5b759d05952195de81cfd06340d4853ef827833f54045291210e7500d00b",
+      "size": [
+        48,
+        48
+      ],
+      "bytes": 7064
+    },
+    "Game/Assets/Branding/Icons/icon_32.png": {
+      "sha256": "4a65784ab6ea276783335b2ddd736f1b02faadcfe6e03782bbe87fab0b1b94d7",
+      "size": [
+        32,
+        32
+      ],
+      "bytes": 3309
+    },
+    "Game/Assets/Branding/Icons/icon_16.png": {
+      "sha256": "6c74eb21b5115be3be4bf40dfc399656a67860889facf82da88635c6897b006e",
+      "size": [
+        16,
+        16
+      ],
+      "bytes": 960
+    }
+  }
+}
