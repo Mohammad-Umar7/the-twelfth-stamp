@@ -1,0 +1,95 @@
+# ---- Unity (project lives in Game/) ----
+/Game/[Ll]ibrary/
+/Game/[Tt]emp/
+/Game/[Oo]bj/
+/Game/[Bb]uild/
+/Game/[Bb]uilds/
+/Game/[Ll]ogs/
+/Game/[Uu]ser[Ss]ettings/
+/Game/[Mm]emoryCaptures/
+/Game/[Rr]ecordings/
+/Game/Assets/Plugins/Editor/JetBrains*
+/Game/.vs/
+/Game/.vscode/
+/Game/.idea/
+/Game/*.csproj
+/Game/*.sln
+/Game/*.slnx
+/Game/*.unityproj
+/Game/*.suo
+/Game/*.user
+/Game/*.pidb
+/Game/*.booproj
+/Game/*.svd
+/Game/*.pdb
+/Game/*.mdb
+/Game/*.opendb
+/Game/*.VC.db
+/Game/sysinfo.txt
+/Game/crashlytics-build.properties
+/Game/Assets/StreamingAssets/aa*
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# ---- Build output and packaging (kept outside source) ----
+/Builds/
+/Release/
+*.apk
+*.aab
+
+# ---- Tooling caches ----
+/Tools/.venv/
+/Tools/**/__pycache__/
+/Audio/.cache/
+/Audio/_work/
+node_modules/
+.hyperframes/
+.media/
+
+# ---- Never commit secrets or browser data ----
+*.env
+.env*
+*.pem
+*.key
+cookies*
+*BrowserData*
+
+# ---- OS ----
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ---- QA screenshots: reports are committed; only a few key frames of the final run ----
+/Docs/QA/**/*.png
+!/Docs/QA/run8/01_menu.png
+!/Docs/QA/run8/03_passport_open.png
+!/Docs/QA/run8/05_window_repel.png
+!/Docs/QA/run8/08_counterfeit_stamp.png
+!/Docs/QA/run8/10c_egypt_mummy_close.png
+!/Docs/QA/run8/51b_berlin_mimic_close.png
+!/Docs/QA/run8/53_home_tear.png
+!/Docs/QA/run8/55_results.png
+
+# ---- Blender auto-backups ----
+*.blend1
+
+# ---- Zipped QA runs (screenshots live in the run folders; archives stay local) ----
+/Docs/QA/*.zip
+
+# ---- Unity editor caches created at runtime ----
+/Game/DataStore/
+
+# ---- Promo film: raw footage, renders, audio and tool envs stay local (scripts, SRT and manifests are tracked) ----
+/Promo/Production/Capture/
+/Promo/Production/Exports/
+/Promo/Production/tools/venv/
+/Promo/**/node_modules/
+/Promo/**/*.mp4
+/Promo/**/*.mkv
+/Promo/**/*.mov
+/Promo/**/*.wav
+/Promo/**/*.m4a
+
+# Promo production media (too large for git)
+Promo/
