@@ -1,0 +1,72 @@
+{
+  "root": "GardenLamp",
+  "tris": 7444,
+  "dims_m": [
+    0.0998,
+    0.0998,
+    0.3286
+  ],
+  "bbox_min": [
+    -0.0499,
+    -0.0499,
+    0.0
+  ],
+  "bbox_max": [
+    0.0499,
+    0.0499,
+    0.3286
+  ],
+  "objects": [
+    {
+      "name": "GardenLamp",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Flame",
+      "type": "MESH",
+      "parent": "GardenLamp",
+      "loc": [
+        0.0,
+        0.0,
+        0.1274
+      ],
+      "tris": 200,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Lamp",
+      "type": "MESH",
+      "parent": "GardenLamp",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7244,
+      "slots": [
+        "TS_Brass",
+        "TS_Glass",
+        "TS_Fabric"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_EmissiveWarm",
+    "TS_Fabric",
+    "TS_Glass"
+  ],
+  "transform_issues": [],
+  "file": "GardenLamp.fbx",
+  "bytes": 400300
+}

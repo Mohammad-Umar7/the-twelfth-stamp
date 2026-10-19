@@ -1,0 +1,251 @@
+{
+  "file": "Controller_Left.fbx",
+  "bytes": 437276,
+  "objects": [
+    {
+      "name": "Controller_Left",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5564,
+      "slots": [
+        "TS_ControllerBody",
+        "TS_ControllerDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.06015,
+        0.13896,
+        0.14029
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0003390726164962461,
+      "custom_normals": true
+    },
+    {
+      "name": "grip",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        -0.01552,
+        -0.01251,
+        0.0067
+      ],
+      "tris": 392,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.01146,
+        0.0421,
+        0.0561
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.7954678514086306e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "menu",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        0.0062,
+        -0.0205,
+        0.07605
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0086,
+        0.0086,
+        0.0032
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.2338684338026692e-07,
+      "custom_normals": true
+    },
+    {
+      "name": "primaryButton",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        -0.0115,
+        -0.032,
+        0.07704
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0132,
+        0.0132,
+        0.004
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.116455733366166e-07,
+      "custom_normals": true
+    },
+    {
+      "name": "secondaryButton",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        -0.0085,
+        -0.0505,
+        0.07664
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0132,
+        0.0132,
+        0.004
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.1164557766186006e-07,
+      "custom_normals": true
+    },
+    {
+      "name": "thumbstick",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        0.0105,
+        -0.043,
+        0.07647
+      ],
+      "tris": 800,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0207,
+        0.0207,
+        0.0104
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.46141245181924e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "trigger",
+      "type": "MESH",
+      "parent": "Controller_Left",
+      "world_loc": [
+        0.0,
+        -0.0551,
+        0.02165
+      ],
+      "tris": 308,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0185,
+        0.01453,
+        0.03664
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.019366646364671e-06,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 7784,
+  "dims_m": [
+    0.0601,
+    0.139,
+    0.1496
+  ],
+  "bbox_min": [
+    -0.0301,
+    -0.1014,
+    -0.0627
+  ],
+  "bbox_max": [
+    0.0301,
+    0.0376,
+    0.0869
+  ],
+  "slots": [
+    "TS_ControllerBody",
+    "TS_ControllerButton",
+    "TS_ControllerDark"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "file": "VintageCamera.fbx",
+  "bytes": 597052,
+  "objects": [
+    {
+      "name": "VintageCamera",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Camera",
+      "type": "MESH",
+      "parent": "VintageCamera",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 11032,
+      "slots": [
+        "TS_Leather",
+        "TS_Chrome",
+        "TS_Glass",
+        "TS_MetalDark",
+        "TS_PlasticWhite"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.1518,
+        0.0698,
+        0.0882
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00040759336965387206,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 11032,
+  "dims_m": [
+    0.1518,
+    0.0698,
+    0.0882
+  ],
+  "bbox_min": [
+    -0.0759,
+    -0.0529,
+    -0.0
+  ],
+  "bbox_max": [
+    0.0759,
+    0.0169,
+    0.0882
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_Leather",
+    "TS_MetalDark",
+    "TS_PlasticWhite"
+  ]
+}

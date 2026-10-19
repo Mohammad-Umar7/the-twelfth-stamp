@@ -1,0 +1,62 @@
+{
+  "root": "Landmark_Pagoda",
+  "tris": 28332,
+  "dims_m": [
+    15.0,
+    16.35,
+    39.17
+  ],
+  "bbox_min": [
+    -7.5,
+    -8.85,
+    0.0
+  ],
+  "bbox_max": [
+    7.5,
+    7.5,
+    39.17
+  ],
+  "objects": [
+    {
+      "name": "Landmark_Pagoda",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Pagoda",
+      "type": "MESH",
+      "parent": "Landmark_Pagoda",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 28332,
+      "slots": [
+        "TS_Wood",
+        "TS_WoodDark",
+        "TS_MetalDark",
+        "TS_Stone",
+        "TS_Brass",
+        "TS_PlasticWhite"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_MetalDark",
+    "TS_PlasticWhite",
+    "TS_Stone",
+    "TS_Wood",
+    "TS_WoodDark"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_Pagoda.fbx",
+  "bytes": 1294188
+}

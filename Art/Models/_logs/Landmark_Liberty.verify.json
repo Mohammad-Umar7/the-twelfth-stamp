@@ -1,0 +1,80 @@
+{
+  "file": "Landmark_Liberty.fbx",
+  "bytes": 399916,
+  "objects": [
+    {
+      "name": "Landmark_Liberty",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Statue",
+      "type": "MESH",
+      "parent": "Landmark_Liberty",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7180,
+      "slots": [
+        "TS_Stone",
+        "TS_Metal",
+        "TS_EmissiveWarm",
+        "TS_MetalDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        63.29507,
+        62.65082,
+        93.6
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 31038.21413423303,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 7180,
+  "dims_m": [
+    63.2951,
+    62.6508,
+    93.6
+  ],
+  "bbox_min": [
+    -31.6475,
+    -30.6778,
+    -0.0
+  ],
+  "bbox_max": [
+    31.6475,
+    31.973,
+    93.6
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Stone"
+  ]
+}

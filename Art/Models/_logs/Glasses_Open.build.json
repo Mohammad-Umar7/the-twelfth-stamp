@@ -1,0 +1,119 @@
+{
+  "root": "Glasses_Open",
+  "tris": 6980,
+  "dims_m": [
+    0.1408,
+    0.1397,
+    0.0474
+  ],
+  "bbox_min": [
+    -0.0704,
+    -0.0024,
+    -0.0327
+  ],
+  "bbox_max": [
+    0.0704,
+    0.1373,
+    0.0147
+  ],
+  "objects": [
+    {
+      "name": "Glasses_Open",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Frame",
+      "type": "MESH",
+      "parent": "Glasses_Open",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 4180,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_NosePad"
+      ],
+      "uv": true
+    },
+    {
+      "name": "LensL",
+      "type": "MESH",
+      "parent": "Glasses_Open",
+      "loc": [
+        0.0355,
+        -0.00075,
+        -0.009
+      ],
+      "tris": 720,
+      "slots": [
+        "TS_Lens"
+      ],
+      "uv": true
+    },
+    {
+      "name": "LensR",
+      "type": "MESH",
+      "parent": "Glasses_Open",
+      "loc": [
+        -0.0355,
+        -0.00075,
+        -0.009
+      ],
+      "tris": 720,
+      "slots": [
+        "TS_Lens"
+      ],
+      "uv": true
+    },
+    {
+      "name": "TempleL",
+      "type": "MESH",
+      "parent": "Glasses_Open",
+      "loc": [
+        0.0666,
+        0.0033,
+        0.0056
+      ],
+      "tris": 680,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_TempleTip"
+      ],
+      "uv": true
+    },
+    {
+      "name": "TempleR",
+      "type": "MESH",
+      "parent": "Glasses_Open",
+      "loc": [
+        -0.0666,
+        0.0033,
+        0.0056
+      ],
+      "tris": 680,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_TempleTip"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Gunmetal",
+    "TS_Lens",
+    "TS_NosePad",
+    "TS_TempleTip"
+  ],
+  "transform_issues": [],
+  "file": "Glasses_Open.fbx",
+  "bytes": 411436,
+  "notes": "Origin: centre of arched nose bridge. Blender +X = wearer's left. Notch on wearer's right (-X) end piece."
+}

@@ -1,0 +1,196 @@
+{
+  "file": "Glasses_Folded.fbx",
+  "bytes": 412220,
+  "objects": [
+    {
+      "name": "Glasses_Folded",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Frame",
+      "type": "MESH",
+      "parent": "Glasses_Folded",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 4180,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_NosePad"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.1374,
+        0.01251,
+        0.0474
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2.6757514447100376e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "LensL",
+      "type": "MESH",
+      "parent": "Glasses_Folded",
+      "world_loc": [
+        0.0355,
+        -0.00075,
+        -0.009
+      ],
+      "tris": 720,
+      "slots": [
+        "TS_Lens"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.052,
+        0.0033,
+        0.043
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.5847742866636627e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "LensR",
+      "type": "MESH",
+      "parent": "Glasses_Folded",
+      "world_loc": [
+        -0.0355,
+        -0.00075,
+        -0.009
+      ],
+      "tris": 720,
+      "slots": [
+        "TS_Lens"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.052,
+        0.0033,
+        0.043
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.5847742866636627e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "TempleL",
+      "type": "MESH",
+      "parent": "Glasses_Folded",
+      "world_loc": [
+        0.0666,
+        0.0033,
+        0.0056
+      ],
+      "tris": 680,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_TempleTip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.13516,
+        0.00506,
+        0.02352
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 6.721103203287545e-07,
+      "custom_normals": true
+    },
+    {
+      "name": "TempleR",
+      "type": "MESH",
+      "parent": "Glasses_Folded",
+      "world_loc": [
+        -0.0666,
+        0.0033,
+        0.0056
+      ],
+      "tris": 680,
+      "slots": [
+        "TS_Gunmetal",
+        "TS_TempleTip"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.13417,
+        0.01888,
+        0.02352
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 6.72121496801074e-07,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 6980,
+  "dims_m": [
+    0.1374,
+    0.0233,
+    0.0474
+  ],
+  "bbox_min": [
+    -0.0687,
+    -0.0024,
+    -0.0327
+  ],
+  "bbox_max": [
+    0.0687,
+    0.0209,
+    0.0147
+  ],
+  "slots": [
+    "TS_Gunmetal",
+    "TS_Lens",
+    "TS_NosePad",
+    "TS_TempleTip"
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "root": "Controller_Right",
+  "tris": 7784,
+  "dims_m": [
+    0.0601,
+    0.139,
+    0.1496
+  ],
+  "bbox_min": [
+    -0.0301,
+    -0.1014,
+    -0.0627
+  ],
+  "bbox_max": [
+    0.0301,
+    0.0376,
+    0.0869
+  ],
+  "objects": [
+    {
+      "name": "Controller_Right",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5564,
+      "slots": [
+        "TS_ControllerBody",
+        "TS_ControllerDark"
+      ],
+      "uv": true
+    },
+    {
+      "name": "grip",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        0.01552,
+        -0.01251,
+        0.0067
+      ],
+      "tris": 392,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    },
+    {
+      "name": "primaryButton",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        0.0115,
+        -0.032,
+        0.07704
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    },
+    {
+      "name": "secondaryButton",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        0.0085,
+        -0.0505,
+        0.07664
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    },
+    {
+      "name": "system",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        -0.0062,
+        -0.0205,
+        0.07605
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    },
+    {
+      "name": "thumbstick",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        -0.0105,
+        -0.043,
+        0.07647
+      ],
+      "tris": 800,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    },
+    {
+      "name": "trigger",
+      "type": "MESH",
+      "parent": "Controller_Right",
+      "loc": [
+        0.0,
+        -0.0551,
+        0.02165
+      ],
+      "tris": 308,
+      "slots": [
+        "TS_ControllerButton"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_ControllerBody",
+    "TS_ControllerButton",
+    "TS_ControllerDark"
+  ],
+  "transform_issues": [],
+  "file": "Controller_Right.fbx",
+  "bytes": 436988
+}

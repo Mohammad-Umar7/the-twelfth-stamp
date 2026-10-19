@@ -1,0 +1,54 @@
+{
+  "root": "Landmark_ColumnGate",
+  "tris": 14592,
+  "dims_m": [
+    41.0,
+    15.0,
+    26.77
+  ],
+  "bbox_min": [
+    -20.5,
+    -7.5,
+    0.0
+  ],
+  "bbox_max": [
+    20.5,
+    7.5,
+    26.77
+  ],
+  "objects": [
+    {
+      "name": "Landmark_ColumnGate",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Gate",
+      "type": "MESH",
+      "parent": "Landmark_ColumnGate",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 14592,
+      "slots": [
+        "TS_Stone",
+        "TS_Metal"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Metal",
+    "TS_Stone"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_ColumnGate.fbx",
+  "bytes": 705964
+}

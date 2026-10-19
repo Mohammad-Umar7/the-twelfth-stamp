@@ -1,0 +1,84 @@
+{
+  "file": "KitchenRun.fbx",
+  "bytes": 440972,
+  "objects": [
+    {
+      "name": "KitchenRun",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "KitchenRunMesh",
+      "type": "MESH",
+      "parent": "KitchenRun",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 8556,
+      "slots": [
+        "TS_Wood",
+        "TS_MetalDark",
+        "TS_Glass",
+        "TS_Metal",
+        "TS_Stone",
+        "TS_Chrome"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        4.02,
+        0.668,
+        1.3075
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2.144632794510624,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 8556,
+  "dims_m": [
+    4.02,
+    0.668,
+    1.3075
+  ],
+  "bbox_min": [
+    -2.01,
+    -0.358,
+    -0.0
+  ],
+  "bbox_max": [
+    2.01,
+    0.31,
+    1.3075
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Stone",
+    "TS_Wood"
+  ]
+}

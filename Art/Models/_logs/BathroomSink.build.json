@@ -1,0 +1,78 @@
+{
+  "root": "BathroomSink",
+  "tris": 3196,
+  "dims_m": [
+    0.82,
+    0.505,
+    1.67
+  ],
+  "bbox_min": [
+    -0.41,
+    -0.505,
+    0.4
+  ],
+  "bbox_max": [
+    0.41,
+    0.0,
+    2.07
+  ],
+  "objects": [
+    {
+      "name": "BathroomSink",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "MirrorGlass",
+      "type": "MESH",
+      "parent": "BathroomSink",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 316,
+      "slots": [
+        "TS_Glass"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Vanity",
+      "type": "MESH",
+      "parent": "BathroomSink",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2880,
+      "slots": [
+        "TS_Wood",
+        "TS_Metal",
+        "TS_Marble",
+        "TS_Ceramic",
+        "TS_Chrome",
+        "TS_MetalDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Ceramic",
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_Marble",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Wood"
+  ],
+  "transform_issues": [],
+  "file": "BathroomSink.fbx",
+  "bytes": 178684
+}

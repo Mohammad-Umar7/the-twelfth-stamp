@@ -1,0 +1,56 @@
+{
+  "root": "Landmark_DomedPavilion",
+  "tris": 12324,
+  "dims_m": [
+    93.0,
+    93.0,
+    65.0
+  ],
+  "bbox_min": [
+    -46.5,
+    -46.5,
+    0.0
+  ],
+  "bbox_max": [
+    46.5,
+    46.5,
+    65.0
+  ],
+  "objects": [
+    {
+      "name": "Landmark_DomedPavilion",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Pavilion",
+      "type": "MESH",
+      "parent": "Landmark_DomedPavilion",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 12324,
+      "slots": [
+        "TS_Marble",
+        "TS_Stone",
+        "TS_Gold"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Gold",
+    "TS_Marble",
+    "TS_Stone"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_DomedPavilion.fbx",
+  "bytes": 579100
+}

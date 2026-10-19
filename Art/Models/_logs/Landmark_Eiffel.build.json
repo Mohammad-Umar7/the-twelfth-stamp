@@ -1,0 +1,56 @@
+{
+  "root": "Landmark_Eiffel",
+  "tris": 16508,
+  "dims_m": [
+    39.1858,
+    39.1858,
+    99.2
+  ],
+  "bbox_min": [
+    -19.5929,
+    -19.5929,
+    0.0
+  ],
+  "bbox_max": [
+    19.5929,
+    19.5929,
+    99.2
+  ],
+  "objects": [
+    {
+      "name": "Landmark_Eiffel",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Tower",
+      "type": "MESH",
+      "parent": "Landmark_Eiffel",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 16508,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Metal",
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Metal",
+    "TS_MetalDark"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_Eiffel.fbx",
+  "bytes": 891564
+}

@@ -1,0 +1,237 @@
+{
+  "root": "Passenger_Parts",
+  "tris": 39678,
+  "dims_m": [
+    0.4913,
+    0.3054,
+    2.1474
+  ],
+  "bbox_min": [
+    -0.1955,
+    -0.172,
+    -0.0001
+  ],
+  "bbox_max": [
+    0.2958,
+    0.1334,
+    2.1473
+  ],
+  "objects": [
+    {
+      "name": "Passenger_Parts",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Part_Chest",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.0,
+        0.0,
+        1.4
+      ],
+      "tris": 8968,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam",
+        "TS_FacePlate"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_FacePlate",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        -0.0,
+        -0.08343,
+        2.00517
+      ],
+      "tris": 1152,
+      "slots": [
+        "TS_FacePlate"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_FingerTag",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.2005,
+        0.0,
+        0.975
+      ],
+      "tris": 832,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Foot",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.095,
+        0.0,
+        0.1
+      ],
+      "tris": 2484,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Forearm",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.21,
+        0.0,
+        1.425
+      ],
+      "tris": 3444,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Hand",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.21,
+        0.0,
+        1.065
+      ],
+      "tris": 1918,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Head",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.0,
+        0.0,
+        1.85
+      ],
+      "tris": 4758,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Hips",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.0,
+        0.0,
+        1.12
+      ],
+      "tris": 4502,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Shin",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.095,
+        0.0,
+        0.62
+      ],
+      "tris": 4294,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_ShoulderShard",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.21,
+        0.0,
+        1.8
+      ],
+      "tris": 80,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_Thigh",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.095,
+        0.0,
+        1.12
+      ],
+      "tris": 3838,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Part_UpperArm",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "loc": [
+        0.21,
+        0.0,
+        1.785
+      ],
+      "tris": 3408,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_BronzeSeam",
+    "TS_FacePlate",
+    "TS_PassengerGlass"
+  ],
+  "transform_issues": [],
+  "file": "Passenger_Parts.fbx",
+  "bytes": 2451292,
+  "faceplate_offset_from_head_blender": [
+    0.0,
+    -0.0834,
+    0.1552
+  ],
+  "edited_live": "MCP for Blender session 17 Oct 2026: added Part_ShoulderShard (asymmetric lifted glass plates, wearer's left shoulder)"
+}

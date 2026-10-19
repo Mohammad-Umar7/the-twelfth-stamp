@@ -1,0 +1,68 @@
+{
+  "root": "StreetLamp_Paris",
+  "tris": 2792,
+  "dims_m": [
+    0.74,
+    0.52,
+    4.0
+  ],
+  "bbox_min": [
+    -0.37,
+    -0.26,
+    0.0
+  ],
+  "bbox_max": [
+    0.37,
+    0.26,
+    4.0
+  ],
+  "objects": [
+    {
+      "name": "StreetLamp_Paris",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Lantern",
+      "type": "MESH",
+      "parent": "StreetLamp_Paris",
+      "loc": [
+        0.0,
+        0.0,
+        3.495
+      ],
+      "tris": 24,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Post",
+      "type": "MESH",
+      "parent": "StreetLamp_Paris",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2768,
+      "slots": [
+        "TS_MetalDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_MetalDark"
+  ],
+  "transform_issues": [],
+  "file": "StreetLamp_Paris.fbx",
+  "bytes": 169308
+}

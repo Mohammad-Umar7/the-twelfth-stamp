@@ -1,0 +1,82 @@
+{
+  "root": "Suitcase",
+  "tris": 9480,
+  "dims_m": [
+    0.851,
+    0.7453,
+    0.617
+  ],
+  "bbox_min": [
+    -0.429,
+    -0.253,
+    0.0
+  ],
+  "bbox_max": [
+    0.422,
+    0.4923,
+    0.617
+  ],
+  "objects": [
+    {
+      "name": "Suitcase",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Base",
+      "type": "MESH",
+      "parent": "Suitcase",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5632,
+      "slots": [
+        "TS_Plastic",
+        "TS_Metal",
+        "TS_Fabric",
+        "TS_MetalDark",
+        "TS_Rubber",
+        "TS_Fabric",
+        "TS_FabricDark"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Lid",
+      "type": "MESH",
+      "parent": "Suitcase",
+      "loc": [
+        0.0,
+        0.25,
+        0.1315
+      ],
+      "tris": 3848,
+      "slots": [
+        "TS_Plastic",
+        "TS_Metal",
+        "TS_Fabric",
+        "TS_FabricDark",
+        "TS_FabricDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Fabric",
+    "TS_FabricDark",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_Rubber"
+  ],
+  "transform_issues": [],
+  "file": "Suitcase.fbx",
+  "bytes": 423900
+}

@@ -1,0 +1,72 @@
+{
+  "root": "Landmark_ClockTower",
+  "tris": 8396,
+  "dims_m": [
+    15.45,
+    15.45,
+    100.1
+  ],
+  "bbox_min": [
+    -7.725,
+    -7.725,
+    0.0
+  ],
+  "bbox_max": [
+    7.725,
+    7.725,
+    100.1
+  ],
+  "objects": [
+    {
+      "name": "Landmark_ClockTower",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Faces",
+      "type": "MESH",
+      "parent": "Landmark_ClockTower",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 768,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Tower",
+      "type": "MESH",
+      "parent": "Landmark_ClockTower",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7628,
+      "slots": [
+        "TS_Stone",
+        "TS_MetalDark",
+        "TS_Gold"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Gold",
+    "TS_MetalDark",
+    "TS_Stone"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_ClockTower.fbx",
+  "bytes": 406636
+}

@@ -1,0 +1,110 @@
+{
+  "file": "HandLantern.fbx",
+  "bytes": 712076,
+  "objects": [
+    {
+      "name": "HandLantern",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Glow",
+      "type": "MESH",
+      "parent": "HandLantern",
+      "world_loc": [
+        0.0,
+        -0.0,
+        -0.347
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.088,
+        0.088,
+        0.154
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0005976525214919098,
+      "custom_normals": true
+    },
+    {
+      "name": "Lantern",
+      "type": "MESH",
+      "parent": "HandLantern",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 13780,
+      "slots": [
+        "TS_Paper",
+        "TS_WoodDark",
+        "TS_PlasticWhite",
+        "TS_FabricDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.24541,
+        0.24541,
+        0.524
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0012636205674926124,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 14020,
+  "dims_m": [
+    0.2454,
+    0.2454,
+    0.524
+  ],
+  "bbox_min": [
+    -0.1227,
+    -0.1227,
+    -0.51
+  ],
+  "bbox_max": [
+    0.1227,
+    0.1227,
+    0.014
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_FabricDark",
+    "TS_Paper",
+    "TS_PlasticWhite",
+    "TS_WoodDark"
+  ]
+}

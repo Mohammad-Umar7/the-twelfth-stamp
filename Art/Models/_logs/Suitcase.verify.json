@@ -1,0 +1,116 @@
+{
+  "file": "Suitcase.fbx",
+  "bytes": 423900,
+  "objects": [
+    {
+      "name": "Suitcase",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Base",
+      "type": "MESH",
+      "parent": "Suitcase",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5632,
+      "slots": [
+        "TS_Plastic",
+        "TS_Metal",
+        "TS_Fabric",
+        "TS_MetalDark",
+        "TS_Rubber",
+        "TS_FabricDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.85101,
+        0.506,
+        0.1315
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.02394485295732954,
+      "custom_normals": true
+    },
+    {
+      "name": "Lid",
+      "type": "MESH",
+      "parent": "Suitcase",
+      "world_loc": [
+        0.0,
+        0.25,
+        0.1315
+      ],
+      "tris": 3848,
+      "slots": [
+        "TS_Plastic",
+        "TS_Metal",
+        "TS_Fabric",
+        "TS_FabricDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.756,
+        0.24267,
+        0.50996
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0035652052462101166,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 9480,
+  "dims_m": [
+    0.851,
+    0.7453,
+    0.617
+  ],
+  "bbox_min": [
+    -0.429,
+    -0.253,
+    -0.0
+  ],
+  "bbox_max": [
+    0.422,
+    0.4923,
+    0.617
+  ],
+  "slots": [
+    "TS_Fabric",
+    "TS_FabricDark",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_Rubber"
+  ]
+}

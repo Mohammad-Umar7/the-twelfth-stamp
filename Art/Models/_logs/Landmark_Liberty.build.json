@@ -1,0 +1,58 @@
+{
+  "root": "Landmark_Liberty",
+  "tris": 7180,
+  "dims_m": [
+    63.2951,
+    62.6508,
+    93.6
+  ],
+  "bbox_min": [
+    -31.6475,
+    -30.6778,
+    0.0
+  ],
+  "bbox_max": [
+    31.6475,
+    31.973,
+    93.6
+  ],
+  "objects": [
+    {
+      "name": "Landmark_Liberty",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Statue",
+      "type": "MESH",
+      "parent": "Landmark_Liberty",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7180,
+      "slots": [
+        "TS_Stone",
+        "TS_Metal",
+        "TS_EmissiveWarm",
+        "TS_MetalDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Stone"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_Liberty.fbx",
+  "bytes": 399916
+}

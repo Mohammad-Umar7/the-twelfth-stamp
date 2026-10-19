@@ -1,0 +1,135 @@
+{
+  "root": "VerificationDesk",
+  "tris": 8284,
+  "dims_m": [
+    1.6,
+    0.7697,
+    1.1276
+  ],
+  "bbox_min": [
+    -0.8,
+    -0.3947,
+    0.0
+  ],
+  "bbox_max": [
+    0.8,
+    0.375,
+    1.1276
+  ],
+  "objects": [
+    {
+      "name": "VerificationDesk",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Desk",
+      "type": "MESH",
+      "parent": "VerificationDesk",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 4556,
+      "slots": [
+        "TS_Wood",
+        "TS_WoodDark",
+        "TS_Brass",
+        "TS_Fabric",
+        "TS_Gold"
+      ],
+      "uv": true
+    },
+    {
+      "name": "HandStamp",
+      "type": "MESH",
+      "parent": "VerificationDesk",
+      "loc": [
+        0.34,
+        0.09,
+        0.76
+      ],
+      "tris": 960,
+      "slots": [
+        "TS_Brass",
+        "TS_WoodDark",
+        "TS_Rubber"
+      ],
+      "uv": true
+    },
+    {
+      "name": "InkPad",
+      "type": "MESH",
+      "parent": "VerificationDesk",
+      "loc": [
+        0.2,
+        0.0,
+        0.76
+      ],
+      "tris": 288,
+      "slots": [
+        "TS_Metal",
+        "TS_FabricDark"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Lamp",
+      "type": "MESH",
+      "parent": "VerificationDesk",
+      "loc": [
+        0.64,
+        0.2,
+        0.76
+      ],
+      "tris": 1896,
+      "slots": [
+        "TS_Brass",
+        "TS_Metal",
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Ledger",
+      "type": "MESH",
+      "parent": "VerificationDesk",
+      "loc": [
+        -0.27,
+        0.01,
+        0.76
+      ],
+      "tris": 584,
+      "slots": [
+        "TS_Paper",
+        "TS_PaperEdge",
+        "TS_Leather",
+        "TS_Fabric"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_EmissiveWarm",
+    "TS_Fabric",
+    "TS_FabricDark",
+    "TS_Gold",
+    "TS_Leather",
+    "TS_Metal",
+    "TS_Paper",
+    "TS_PaperEdge",
+    "TS_Rubber",
+    "TS_Wood",
+    "TS_WoodDark"
+  ],
+  "transform_issues": [],
+  "file": "VerificationDesk.fbx",
+  "bytes": 448668
+}

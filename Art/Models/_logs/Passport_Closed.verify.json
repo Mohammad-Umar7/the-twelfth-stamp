@@ -1,0 +1,138 @@
+{
+  "file": "Passport_Closed.fbx",
+  "bytes": 180172,
+  "objects": [
+    {
+      "name": "Passport_Closed",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Back",
+      "type": "MESH",
+      "parent": "Passport_Closed",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 316,
+      "slots": [
+        "TS_LeatherNavy"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.1085,
+        0.0085,
+        0.152
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2.2799863919657295e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "Cover",
+      "type": "MESH",
+      "parent": "Passport_Closed",
+      "world_loc": [
+        0.00425,
+        -0.0036,
+        0.0
+      ],
+      "tris": 2084,
+      "slots": [
+        "TS_LeatherNavy",
+        "TS_Gold"
+      ],
+      "uv_layers": [
+        "UVMap",
+        "UVMap.001"
+      ],
+      "world_dims": [
+        0.10425,
+        0.00335,
+        0.152
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2.1112387372320758e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "Pages",
+      "type": "MESH",
+      "parent": "Passport_Closed",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 12,
+      "slots": [
+        "TS_Paper",
+        "TS_PaperEdge"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.1039,
+        0.0058,
+        0.148
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 8.918777158820981e-05,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 2412,
+  "dims_m": [
+    0.1085,
+    0.0106,
+    0.152
+  ],
+  "bbox_min": [
+    0.0,
+    -0.0063,
+    -0.076
+  ],
+  "bbox_max": [
+    0.1085,
+    0.0043,
+    0.076
+  ],
+  "slots": [
+    "TS_Gold",
+    "TS_LeatherNavy",
+    "TS_Paper",
+    "TS_PaperEdge"
+  ]
+}

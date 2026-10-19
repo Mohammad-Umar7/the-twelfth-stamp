@@ -1,0 +1,108 @@
+{
+  "file": "GardenLamp.fbx",
+  "bytes": 400300,
+  "objects": [
+    {
+      "name": "GardenLamp",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Flame",
+      "type": "MESH",
+      "parent": "GardenLamp",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.1274
+      ],
+      "tris": 200,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0112,
+        0.0112,
+        0.0266
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.2224505359093038e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "Lamp",
+      "type": "MESH",
+      "parent": "GardenLamp",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7244,
+      "slots": [
+        "TS_Brass",
+        "TS_Glass",
+        "TS_Fabric"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.09982,
+        0.09982,
+        0.32865
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00047153480224555304,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 7444,
+  "dims_m": [
+    0.0998,
+    0.0998,
+    0.3287
+  ],
+  "bbox_min": [
+    -0.0499,
+    -0.0499,
+    -0.0
+  ],
+  "bbox_max": [
+    0.0499,
+    0.0499,
+    0.3286
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_EmissiveWarm",
+    "TS_Fabric",
+    "TS_Glass"
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "file": "Landmark_ClockTower.fbx",
+  "bytes": 406636,
+  "objects": [
+    {
+      "name": "Landmark_ClockTower",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Faces",
+      "type": "MESH",
+      "parent": "Landmark_ClockTower",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 768,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        14.84,
+        14.84,
+        7.0
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 18.4197548429169,
+      "custom_normals": true
+    },
+    {
+      "name": "Tower",
+      "type": "MESH",
+      "parent": "Landmark_ClockTower",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 7628,
+      "slots": [
+        "TS_Stone",
+        "TS_MetalDark",
+        "TS_Gold"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        15.45,
+        15.45,
+        100.1
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 14731.672199435827,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 8396,
+  "dims_m": [
+    15.45,
+    15.45,
+    100.1
+  ],
+  "bbox_min": [
+    -7.725,
+    -7.725,
+    -0.0
+  ],
+  "bbox_max": [
+    7.725,
+    7.725,
+    100.1
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Gold",
+    "TS_MetalDark",
+    "TS_Stone"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "root": "Reflector",
+  "tris": 7152,
+  "dims_m": [
+    1.124,
+    0.6,
+    1.706
+  ],
+  "bbox_min": [
+    -0.562,
+    -0.3,
+    0.0
+  ],
+  "bbox_max": [
+    0.562,
+    0.3,
+    1.706
+  ],
+  "objects": [
+    {
+      "name": "Reflector",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Base",
+      "type": "MESH",
+      "parent": "Reflector",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 1376,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Brass",
+        "TS_Rubber"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Pivot",
+      "type": "MESH",
+      "parent": "Reflector",
+      "loc": [
+        0.0,
+        0.0,
+        0.62
+      ],
+      "tris": 5776,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Brass",
+        "TS_Chrome"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_Chrome",
+    "TS_MetalDark",
+    "TS_Rubber"
+  ],
+  "transform_issues": [],
+  "file": "Reflector.fbx",
+  "bytes": 396460
+}

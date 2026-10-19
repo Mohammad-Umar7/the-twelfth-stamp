@@ -1,0 +1,104 @@
+{
+  "file": "StreetLamp_Paris.fbx",
+  "bytes": 169308,
+  "objects": [
+    {
+      "name": "StreetLamp_Paris",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Lantern",
+      "type": "MESH",
+      "parent": "StreetLamp_Paris",
+      "world_loc": [
+        0.0,
+        0.0,
+        3.495
+      ],
+      "tris": 24,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.35507,
+        0.41,
+        0.43
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.029843028867617243,
+      "custom_normals": true
+    },
+    {
+      "name": "Post",
+      "type": "MESH",
+      "parent": "StreetLamp_Paris",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2768,
+      "slots": [
+        "TS_MetalDark"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.74,
+        0.52,
+        4.0
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.1348202758753042,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 2792,
+  "dims_m": [
+    0.74,
+    0.52,
+    4.0
+  ],
+  "bbox_min": [
+    -0.37,
+    -0.26,
+    -0.0
+  ],
+  "bbox_max": [
+    0.37,
+    0.26,
+    4.0
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_MetalDark"
+  ]
+}

@@ -1,0 +1,377 @@
+{
+  "file": "Passenger_Parts.fbx",
+  "bytes": 2441948,
+  "objects": [
+    {
+      "name": "Passenger_Parts",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Part_Chest",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.0,
+        0.0,
+        1.4
+      ],
+      "tris": 8968,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam",
+        "TS_FacePlate"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.39093,
+        0.19283,
+        0.462
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.019869012074292158,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_FacePlate",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        -0.0,
+        -0.08343,
+        2.00517
+      ],
+      "tris": 1152,
+      "slots": [
+        "TS_FacePlate"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.1576,
+        0.07377,
+        0.21975
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00019179197562301003,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_FingerTag",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.2005,
+        0.0,
+        0.975
+      ],
+      "tris": 832,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.016,
+        0.0076,
+        0.15465
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.1641334809386552e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Foot",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.095,
+        0.0,
+        0.1
+      ],
+      "tris": 2484,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.09054,
+        0.234,
+        0.13013
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00132015810706375,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Forearm",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.21,
+        0.0,
+        1.425
+      ],
+      "tris": 3444,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.09086,
+        0.08775,
+        0.395
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0016985877863875997,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Hand",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.21,
+        0.0,
+        1.065
+      ],
+      "tris": 1918,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.07291,
+        0.04078,
+        0.11713
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.00024015744883024287,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Head",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.0,
+        0.0,
+        1.85
+      ],
+      "tris": 4758,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.21694,
+        0.23181,
+        0.30331
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.008296155005578105,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Hips",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.0,
+        0.0,
+        1.12
+      ],
+      "tris": 4502,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.297,
+        0.20016,
+        0.344
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.012983897244310113,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Shin",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.095,
+        0.0,
+        0.62
+      ],
+      "tris": 4294,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.11159,
+        0.1365,
+        0.562
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.004444269017010761,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_Thigh",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.095,
+        0.0,
+        1.12
+      ],
+      "tris": 3838,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.139,
+        0.16304,
+        0.55
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.006872367630750427,
+      "custom_normals": true
+    },
+    {
+      "name": "Part_UpperArm",
+      "type": "MESH",
+      "parent": "Passenger_Parts",
+      "world_loc": [
+        0.21,
+        0.0,
+        1.785
+      ],
+      "tris": 3408,
+      "slots": [
+        "TS_PassengerGlass",
+        "TS_BronzeSeam"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.11652,
+        0.11648,
+        0.41357
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.0034523701701324023,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 39598,
+  "dims_m": [
+    0.464,
+    0.3054,
+    2.1474
+  ],
+  "bbox_min": [
+    -0.1955,
+    -0.172,
+    -0.0001
+  ],
+  "bbox_max": [
+    0.2685,
+    0.1334,
+    2.1473
+  ],
+  "slots": [
+    "TS_BronzeSeam",
+    "TS_FacePlate",
+    "TS_PassengerGlass"
+  ]
+}

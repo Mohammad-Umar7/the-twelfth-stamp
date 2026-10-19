@@ -1,0 +1,223 @@
+{
+  "file": "Passport_Open.fbx",
+  "bytes": 274012,
+  "objects": [
+    {
+      "name": "Passport_Open",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Covers",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 484,
+      "slots": [
+        "TS_LeatherNavy"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.217,
+        0.01227,
+        0.152
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.220122343793578e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "PageLeft",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 416,
+      "slots": [
+        "TS_Paper"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.10467,
+        0.01374,
+        0.148
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 68,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 7.873560054847585e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "PageRight",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 416,
+      "slots": [
+        "TS_Paper"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.10467,
+        0.01374,
+        0.148
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 68,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 7.875882349006796e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "StackLeft",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 212,
+      "slots": [
+        "TS_Paper",
+        "TS_PaperEdge"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.10467,
+        0.01406,
+        0.148
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.4698913755358824e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "StackRight",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 212,
+      "slots": [
+        "TS_Paper",
+        "TS_PaperEdge"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.10467,
+        0.01406,
+        0.148
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.469891375535883e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "Thread",
+      "type": "MESH",
+      "parent": "Passport_Open",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2100,
+      "slots": [
+        "TS_PaperEdge"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.00079,
+        0.00112,
+        0.13218
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.4007860572075948e-08,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 3840,
+  "dims_m": [
+    0.217,
+    0.0155,
+    0.152
+  ],
+  "bbox_min": [
+    -0.1085,
+    -0.0137,
+    -0.076
+  ],
+  "bbox_max": [
+    0.1085,
+    0.0018,
+    0.076
+  ],
+  "slots": [
+    "TS_LeatherNavy",
+    "TS_Paper",
+    "TS_PaperEdge"
+  ]
+}

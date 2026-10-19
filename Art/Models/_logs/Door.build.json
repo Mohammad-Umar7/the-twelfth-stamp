@@ -1,0 +1,56 @@
+{
+  "root": "Door",
+  "tris": 1792,
+  "dims_m": [
+    0.908,
+    0.171,
+    2.092
+  ],
+  "bbox_min": [
+    -0.008,
+    -0.0855,
+    0.006
+  ],
+  "bbox_max": [
+    0.9,
+    0.0855,
+    2.098
+  ],
+  "objects": [
+    {
+      "name": "Door",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "DoorLeaf",
+      "type": "MESH",
+      "parent": "Door",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 1792,
+      "slots": [
+        "TS_Wood",
+        "TS_MetalDark",
+        "TS_Metal"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Wood"
+  ],
+  "transform_issues": [],
+  "file": "Door.fbx",
+  "bytes": 104604
+}

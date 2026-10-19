@@ -1,0 +1,109 @@
+{
+  "file": "GlassesCase.fbx",
+  "bytes": 265644,
+  "objects": [
+    {
+      "name": "GlassesCase",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "CaseBottom",
+      "type": "MESH",
+      "parent": "GlassesCase",
+      "world_loc": [
+        0.0,
+        0.031,
+        0.016
+      ],
+      "tris": 2428,
+      "slots": [
+        "TS_LeatherNavy",
+        "TS_Lining",
+        "TS_Brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.165,
+        0.0658,
+        0.0176
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.508484056352257e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "CaseLid",
+      "type": "MESH",
+      "parent": "GlassesCase",
+      "world_loc": [
+        0.0,
+        0.031,
+        0.016
+      ],
+      "tris": 2892,
+      "slots": [
+        "TS_LeatherNavy",
+        "TS_Lining",
+        "TS_Brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.165,
+        0.0639,
+        0.02905
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 3.9110598864558194e-05,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 5320,
+  "dims_m": [
+    0.165,
+    0.0658,
+    0.045
+  ],
+  "bbox_min": [
+    -0.0825,
+    -0.0332,
+    -0.0
+  ],
+  "bbox_max": [
+    0.0825,
+    0.0326,
+    0.045
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_LeatherNavy",
+    "TS_Lining"
+  ]
+}

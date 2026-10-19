@@ -1,0 +1,80 @@
+{
+  "file": "Fridge.fbx",
+  "bytes": 115276,
+  "objects": [
+    {
+      "name": "Fridge",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "FridgeMesh",
+      "type": "MESH",
+      "parent": "Fridge",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2124,
+      "slots": [
+        "TS_PlasticWhite",
+        "TS_MetalDark",
+        "TS_Metal",
+        "TS_Plastic"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.85,
+        0.773,
+        1.9
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.1364685038264823,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 2124,
+  "dims_m": [
+    0.85,
+    0.773,
+    1.9
+  ],
+  "bbox_min": [
+    -0.425,
+    -0.413,
+    -0.0
+  ],
+  "bbox_max": [
+    0.425,
+    0.36,
+    1.9
+  ],
+  "slots": [
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_PlasticWhite"
+  ]
+}

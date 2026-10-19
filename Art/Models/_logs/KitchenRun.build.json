@@ -1,0 +1,62 @@
+{
+  "root": "KitchenRun",
+  "tris": 8556,
+  "dims_m": [
+    4.02,
+    0.668,
+    1.3075
+  ],
+  "bbox_min": [
+    -2.01,
+    -0.358,
+    0.0
+  ],
+  "bbox_max": [
+    2.01,
+    0.31,
+    1.3075
+  ],
+  "objects": [
+    {
+      "name": "KitchenRun",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "KitchenRunMesh",
+      "type": "MESH",
+      "parent": "KitchenRun",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 8556,
+      "slots": [
+        "TS_Wood",
+        "TS_MetalDark",
+        "TS_Glass",
+        "TS_Metal",
+        "TS_Stone",
+        "TS_Chrome"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Stone",
+    "TS_Wood"
+  ],
+  "transform_issues": [],
+  "file": "KitchenRun.fbx",
+  "bytes": 440972
+}

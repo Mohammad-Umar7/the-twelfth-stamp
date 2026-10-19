@@ -1,0 +1,58 @@
+{
+  "root": "Landmark_ArchTower",
+  "tris": 21852,
+  "dims_m": [
+    56.0,
+    22.5999,
+    150.0
+  ],
+  "bbox_min": [
+    -28.0,
+    -11.3,
+    0.0
+  ],
+  "bbox_max": [
+    28.0,
+    11.3,
+    150.0
+  ],
+  "objects": [
+    {
+      "name": "Landmark_ArchTower",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Tower",
+      "type": "MESH",
+      "parent": "Landmark_ArchTower",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 21852,
+      "slots": [
+        "TS_Glass",
+        "TS_Metal",
+        "TS_EmissiveWarm",
+        "TS_MetalDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_Glass",
+    "TS_Metal",
+    "TS_MetalDark"
+  ],
+  "transform_issues": [],
+  "file": "Landmark_ArchTower.fbx",
+  "bytes": 1216924
+}

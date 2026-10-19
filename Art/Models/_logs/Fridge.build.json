@@ -1,0 +1,58 @@
+{
+  "root": "Fridge",
+  "tris": 2124,
+  "dims_m": [
+    0.85,
+    0.773,
+    1.9
+  ],
+  "bbox_min": [
+    -0.425,
+    -0.413,
+    0.0
+  ],
+  "bbox_max": [
+    0.425,
+    0.36,
+    1.9
+  ],
+  "objects": [
+    {
+      "name": "Fridge",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "FridgeMesh",
+      "type": "MESH",
+      "parent": "Fridge",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2124,
+      "slots": [
+        "TS_PlasticWhite",
+        "TS_MetalDark",
+        "TS_Metal",
+        "TS_Plastic"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_PlasticWhite"
+  ],
+  "transform_issues": [],
+  "file": "Fridge.fbx",
+  "bytes": 115276
+}

@@ -1,0 +1,80 @@
+{
+  "root": "Noisemaker",
+  "tris": 9172,
+  "dims_m": [
+    0.38,
+    0.1332,
+    0.4037
+  ],
+  "bbox_min": [
+    -0.255,
+    -0.0614,
+    0.0
+  ],
+  "bbox_max": [
+    0.125,
+    0.0718,
+    0.4037
+  ],
+  "objects": [
+    {
+      "name": "Noisemaker",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Dial",
+      "type": "MESH",
+      "parent": "Noisemaker",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 256,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Radio",
+      "type": "MESH",
+      "parent": "Noisemaker",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 8916,
+      "slots": [
+        "TS_Leather",
+        "TS_Chrome",
+        "TS_FabricDark",
+        "TS_Glass",
+        "TS_MetalDark",
+        "TS_Plastic",
+        "TS_Rubber"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_EmissiveWarm",
+    "TS_FabricDark",
+    "TS_Glass",
+    "TS_Leather",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_Rubber"
+  ],
+  "transform_issues": [],
+  "file": "Noisemaker.fbx",
+  "bytes": 445996
+}

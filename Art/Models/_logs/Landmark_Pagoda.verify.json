@@ -1,0 +1,84 @@
+{
+  "file": "Landmark_Pagoda.fbx",
+  "bytes": 1294188,
+  "objects": [
+    {
+      "name": "Landmark_Pagoda",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Pagoda",
+      "type": "MESH",
+      "parent": "Landmark_Pagoda",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 28332,
+      "slots": [
+        "TS_Wood",
+        "TS_WoodDark",
+        "TS_MetalDark",
+        "TS_Stone",
+        "TS_Brass",
+        "TS_PlasticWhite"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        15.0,
+        16.35,
+        39.17
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1748.6406861730732,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 28332,
+  "dims_m": [
+    15.0,
+    16.35,
+    39.17
+  ],
+  "bbox_min": [
+    -7.5,
+    -8.85,
+    -0.0
+  ],
+  "bbox_max": [
+    7.5,
+    7.5,
+    39.17
+  ],
+  "slots": [
+    "TS_Brass",
+    "TS_MetalDark",
+    "TS_PlasticWhite",
+    "TS_Stone",
+    "TS_Wood",
+    "TS_WoodDark"
+  ]
+}

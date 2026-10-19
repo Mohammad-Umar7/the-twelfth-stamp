@@ -1,0 +1,54 @@
+{
+  "root": "DiningChair",
+  "tris": 2072,
+  "dims_m": [
+    0.44,
+    0.501,
+    0.862
+  ],
+  "bbox_min": [
+    -0.22,
+    -0.23,
+    0.0
+  ],
+  "bbox_max": [
+    0.22,
+    0.271,
+    0.862
+  ],
+  "objects": [
+    {
+      "name": "DiningChair",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "DiningChairMesh",
+      "type": "MESH",
+      "parent": "DiningChair",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2072,
+      "slots": [
+        "TS_Wood",
+        "TS_Fabric"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Fabric",
+    "TS_Wood"
+  ],
+  "transform_issues": [],
+  "file": "DiningChair.fbx",
+  "bytes": 128524
+}

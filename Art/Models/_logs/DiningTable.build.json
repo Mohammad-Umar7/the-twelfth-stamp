@@ -1,0 +1,52 @@
+{
+  "root": "DiningTable",
+  "tris": 892,
+  "dims_m": [
+    1.6,
+    0.9,
+    0.75
+  ],
+  "bbox_min": [
+    -0.8,
+    -0.45,
+    0.0
+  ],
+  "bbox_max": [
+    0.8,
+    0.45,
+    0.75
+  ],
+  "objects": [
+    {
+      "name": "DiningTable",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "DiningTableMesh",
+      "type": "MESH",
+      "parent": "DiningTable",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 892,
+      "slots": [
+        "TS_Wood"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Wood"
+  ],
+  "transform_issues": [],
+  "file": "DiningTable.fbx",
+  "bytes": 62636
+}

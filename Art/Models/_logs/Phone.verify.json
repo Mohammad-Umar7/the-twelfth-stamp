@@ -1,0 +1,109 @@
+{
+  "file": "Phone.fbx",
+  "bytes": 138956,
+  "objects": [
+    {
+      "name": "Phone",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "PhoneBody",
+      "type": "MESH",
+      "parent": "Phone",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 2148,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Plastic",
+        "TS_Glass",
+        "TS_Chrome"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0733,
+        0.012,
+        0.147
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 9.43819265699295e-05,
+      "custom_normals": true
+    },
+    {
+      "name": "Screen",
+      "type": "MESH",
+      "parent": "Phone",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 380,
+      "slots": [
+        "TS_Glass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.0675,
+        0.0003,
+        0.1425
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 2.8673486185404397e-06,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 2528,
+  "dims_m": [
+    0.0733,
+    0.0122,
+    0.147
+  ],
+  "bbox_min": [
+    -0.0366,
+    -0.0045,
+    -0.0735
+  ],
+  "bbox_max": [
+    0.0366,
+    0.0077,
+    0.0735
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_MetalDark",
+    "TS_Plastic"
+  ]
+}

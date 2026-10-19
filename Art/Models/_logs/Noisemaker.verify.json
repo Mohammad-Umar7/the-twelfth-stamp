@@ -1,0 +1,116 @@
+{
+  "file": "Noisemaker.fbx",
+  "bytes": 445996,
+  "objects": [
+    {
+      "name": "Noisemaker",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Dial",
+      "type": "MESH",
+      "parent": "Noisemaker",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 256,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.072,
+        0.001,
+        0.072
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 4.064892460557238e-06,
+      "custom_normals": true
+    },
+    {
+      "name": "Radio",
+      "type": "MESH",
+      "parent": "Noisemaker",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 8916,
+      "slots": [
+        "TS_Leather",
+        "TS_Chrome",
+        "TS_FabricDark",
+        "TS_Glass",
+        "TS_MetalDark",
+        "TS_Plastic",
+        "TS_Rubber"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.38,
+        0.13324,
+        0.40371
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 0.003699956007353358,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 9172,
+  "dims_m": [
+    0.38,
+    0.1332,
+    0.4037
+  ],
+  "bbox_min": [
+    -0.255,
+    -0.0614,
+    -0.0
+  ],
+  "bbox_max": [
+    0.125,
+    0.0718,
+    0.4037
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_EmissiveWarm",
+    "TS_FabricDark",
+    "TS_Glass",
+    "TS_Leather",
+    "TS_MetalDark",
+    "TS_Plastic",
+    "TS_Rubber"
+  ]
+}

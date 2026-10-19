@@ -1,0 +1,56 @@
+{
+  "root": "Sofa",
+  "tris": 12160,
+  "dims_m": [
+    2.3,
+    0.9,
+    0.8898
+  ],
+  "bbox_min": [
+    -1.15,
+    -0.45,
+    0.0
+  ],
+  "bbox_max": [
+    1.15,
+    0.45,
+    0.8898
+  ],
+  "objects": [
+    {
+      "name": "Sofa",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "SofaMesh",
+      "type": "MESH",
+      "parent": "Sofa",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 12160,
+      "slots": [
+        "TS_Fabric",
+        "TS_FabricDark",
+        "TS_WoodDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Fabric",
+    "TS_FabricDark",
+    "TS_WoodDark"
+  ],
+  "transform_issues": [],
+  "file": "Sofa.fbx",
+  "bytes": 586156
+}

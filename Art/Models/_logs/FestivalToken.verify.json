@@ -1,0 +1,74 @@
+{
+  "file": "FestivalToken.fbx",
+  "bytes": 266172,
+  "objects": [
+    {
+      "name": "FestivalToken",
+      "type": "EMPTY",
+      "parent": null,
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Token",
+      "type": "MESH",
+      "parent": "FestivalToken",
+      "world_loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5278,
+      "slots": [
+        "TS_Brass"
+      ],
+      "uv_layers": [
+        "UVMap"
+      ],
+      "world_dims": [
+        0.03196,
+        0.0026,
+        0.03196
+      ],
+      "loose_verts": 0,
+      "loose_edges": 0,
+      "boundary_edges": 0,
+      "nonmanifold_edges": 0,
+      "degenerate_faces": 0,
+      "signed_volume": 1.603471288524885e-06,
+      "custom_normals": true
+    }
+  ],
+  "globals": {
+    "fbx_version": 7400,
+    "UpAxis": 1,
+    "UpAxisSign": 1,
+    "FrontAxis": 2,
+    "FrontAxisSign": 1,
+    "CoordAxis": 0,
+    "CoordAxisSign": 1,
+    "UnitScaleFactor": 100.0
+  },
+  "tris": 5278,
+  "dims_m": [
+    0.032,
+    0.0026,
+    0.032
+  ],
+  "bbox_min": [
+    -0.016,
+    -0.0013,
+    -0.016
+  ],
+  "bbox_max": [
+    0.016,
+    0.0013,
+    0.016
+  ],
+  "slots": [
+    "TS_Brass"
+  ]
+}

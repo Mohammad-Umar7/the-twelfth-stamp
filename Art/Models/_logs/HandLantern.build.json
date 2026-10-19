@@ -1,0 +1,74 @@
+{
+  "root": "HandLantern",
+  "tris": 14020,
+  "dims_m": [
+    0.2454,
+    0.2454,
+    0.524
+  ],
+  "bbox_min": [
+    -0.1227,
+    -0.1227,
+    -0.51
+  ],
+  "bbox_max": [
+    0.1227,
+    0.1227,
+    0.014
+  ],
+  "objects": [
+    {
+      "name": "HandLantern",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Glow",
+      "type": "MESH",
+      "parent": "HandLantern",
+      "loc": [
+        0.0,
+        0.0,
+        -0.347
+      ],
+      "tris": 240,
+      "slots": [
+        "TS_EmissiveWarm"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Lantern",
+      "type": "MESH",
+      "parent": "HandLantern",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 13780,
+      "slots": [
+        "TS_Paper",
+        "TS_WoodDark",
+        "TS_PlasticWhite",
+        "TS_FabricDark"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_EmissiveWarm",
+    "TS_FabricDark",
+    "TS_Paper",
+    "TS_PlasticWhite",
+    "TS_WoodDark"
+  ],
+  "transform_issues": [],
+  "file": "HandLantern.fbx",
+  "bytes": 712076
+}

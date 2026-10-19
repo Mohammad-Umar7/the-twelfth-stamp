@@ -1,0 +1,60 @@
+{
+  "root": "VintageCamera",
+  "tris": 11032,
+  "dims_m": [
+    0.1518,
+    0.0698,
+    0.0882
+  ],
+  "bbox_min": [
+    -0.0759,
+    -0.0529,
+    0.0
+  ],
+  "bbox_max": [
+    0.0759,
+    0.0169,
+    0.0882
+  ],
+  "objects": [
+    {
+      "name": "VintageCamera",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Camera",
+      "type": "MESH",
+      "parent": "VintageCamera",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 11032,
+      "slots": [
+        "TS_Leather",
+        "TS_Chrome",
+        "TS_Glass",
+        "TS_MetalDark",
+        "TS_PlasticWhite"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Chrome",
+    "TS_Glass",
+    "TS_Leather",
+    "TS_MetalDark",
+    "TS_PlasticWhite"
+  ],
+  "transform_issues": [],
+  "file": "VintageCamera.fbx",
+  "bytes": 597052
+}

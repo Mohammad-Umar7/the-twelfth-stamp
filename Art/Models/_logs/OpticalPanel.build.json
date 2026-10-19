@@ -1,0 +1,74 @@
+{
+  "root": "OpticalPanel",
+  "tris": 5644,
+  "dims_m": [
+    0.72,
+    0.44,
+    1.615
+  ],
+  "bbox_min": [
+    -0.36,
+    -0.22,
+    0.0
+  ],
+  "bbox_max": [
+    0.36,
+    0.22,
+    1.615
+  ],
+  "objects": [
+    {
+      "name": "OpticalPanel",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Base",
+      "type": "MESH",
+      "parent": "OpticalPanel",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 1120,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Metal",
+        "TS_Rubber"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Pivot",
+      "type": "MESH",
+      "parent": "OpticalPanel",
+      "loc": [
+        0.0,
+        0.0,
+        0.83
+      ],
+      "tris": 4524,
+      "slots": [
+        "TS_MetalDark",
+        "TS_Metal",
+        "TS_Glass"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Glass",
+    "TS_Metal",
+    "TS_MetalDark",
+    "TS_Rubber"
+  ],
+  "transform_issues": [],
+  "file": "OpticalPanel.fbx",
+  "bytes": 255372
+}

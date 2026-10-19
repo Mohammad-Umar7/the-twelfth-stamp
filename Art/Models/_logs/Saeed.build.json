@@ -1,0 +1,122 @@
+{
+  "file": "Saeed.fbx",
+  "bytes": 1354588,
+  "tris": 33270,
+  "verts": 17311,
+  "dims_m": [
+    1.1714,
+    0.5215,
+    1.8277
+  ],
+  "slots": [
+    "TS_Eyes",
+    "TS_Hair",
+    "TS_Kandura",
+    "TS_Leather",
+    "TS_Skin",
+    "TS_Suede"
+  ],
+  "bones": [
+    "Root",
+    "Hips",
+    "Spine",
+    "Chest",
+    "UpperChest",
+    "Shoulder_L",
+    "UpperArm_L",
+    "Forearm_L",
+    "Hand_L",
+    "Index1_L",
+    "Index2_L",
+    "Index3_L",
+    "Middle1_L",
+    "Middle2_L",
+    "Middle3_L",
+    "Little1_L",
+    "Little2_L",
+    "Little3_L",
+    "Ring1_L",
+    "Ring2_L",
+    "Ring3_L",
+    "Thumb1_L",
+    "Thumb2_L",
+    "Thumb3_L",
+    "Shoulder_R",
+    "UpperArm_R",
+    "Forearm_R",
+    "Hand_R",
+    "Index1_R",
+    "Index2_R",
+    "Index3_R",
+    "Middle1_R",
+    "Middle2_R",
+    "Middle3_R",
+    "Little1_R",
+    "Little2_R",
+    "Little3_R",
+    "Ring1_R",
+    "Ring2_R",
+    "Ring3_R",
+    "Thumb1_R",
+    "Thumb2_R",
+    "Thumb3_R",
+    "Neck",
+    "Head",
+    "UpperLeg_L",
+    "LowerLeg_L",
+    "Foot_L",
+    "Toes_L",
+    "UpperLeg_R",
+    "LowerLeg_R",
+    "Foot_R",
+    "Toes_R"
+  ],
+  "parts_tris": {
+    "Body": 10602,
+    "Kandura": 8277,
+    "Hair": 9527,
+    "Leather": 2684,
+    "Boots": 1300,
+    "Eyes": 880
+  },
+  "objects": [
+    {
+      "name": "Armature",
+      "type": "ARMATURE",
+      "parent": null
+    },
+    {
+      "name": "SaeedMesh",
+      "type": "MESH",
+      "parent": "Armature",
+      "tris": 33270,
+      "slots": [
+        "TS_Skin",
+        "TS_Kandura",
+        "TS_Suede",
+        "TS_Leather",
+        "TS_Hair",
+        "TS_Eyes"
+      ],
+      "world_dims": [
+        1.1714,
+        0.5215,
+        1.8277
+      ],
+      "uv": true
+    }
+  ],
+  "textures": [
+    "saeed_eyes.png",
+    "saeed_hair.png",
+    "saeed_hair_n.png",
+    "saeed_kandura.png",
+    "saeed_kandura_n.png",
+    "saeed_leather.png",
+    "saeed_leather_n.png",
+    "saeed_skin.png",
+    "saeed_skin_n.png",
+    "saeed_suede.png",
+    "saeed_suede_n.png"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "root": "FestivalToken",
+  "tris": 5278,
+  "dims_m": [
+    0.032,
+    0.0026,
+    0.032
+  ],
+  "bbox_min": [
+    -0.016,
+    -0.0013,
+    -0.016
+  ],
+  "bbox_max": [
+    0.016,
+    0.0013,
+    0.016
+  ],
+  "objects": [
+    {
+      "name": "FestivalToken",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Token",
+      "type": "MESH",
+      "parent": "FestivalToken",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 5278,
+      "slots": [
+        "TS_Brass"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_Brass"
+  ],
+  "transform_issues": [],
+  "file": "FestivalToken.fbx",
+  "bytes": 266172
+}

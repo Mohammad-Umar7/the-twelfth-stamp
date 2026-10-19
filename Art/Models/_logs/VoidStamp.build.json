@@ -1,0 +1,74 @@
+{
+  "root": "VoidStamp",
+  "tris": 1840,
+  "dims_m": [
+    0.094,
+    0.064,
+    0.153
+  ],
+  "bbox_min": [
+    -0.047,
+    -0.032,
+    0.0
+  ],
+  "bbox_max": [
+    0.047,
+    0.032,
+    0.153
+  ],
+  "objects": [
+    {
+      "name": "VoidStamp",
+      "type": "EMPTY",
+      "parent": null,
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "Body",
+      "type": "MESH",
+      "parent": "VoidStamp",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 1780,
+      "slots": [
+        "TS_WoodDark",
+        "TS_Wood",
+        "TS_Metal",
+        "TS_FabricDark"
+      ],
+      "uv": true
+    },
+    {
+      "name": "Face",
+      "type": "MESH",
+      "parent": "VoidStamp",
+      "loc": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "tris": 60,
+      "slots": [
+        "TS_Rubber"
+      ],
+      "uv": true
+    }
+  ],
+  "slots": [
+    "TS_FabricDark",
+    "TS_Metal",
+    "TS_Rubber",
+    "TS_Wood",
+    "TS_WoodDark"
+  ],
+  "transform_issues": [],
+  "file": "VoidStamp.fbx",
+  "bytes": 113068
+}
